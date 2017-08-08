@@ -1,7 +1,10 @@
 {
-  "name": "hexo-site",
+  "name": "bnote",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js"
+  },
   "hexo": {
     "version": "3.3.8"
   },
