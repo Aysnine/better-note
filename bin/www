@@ -3,7 +3,7 @@ const spawn = require('child_process').spawn
 let port = process.env.PORT || '9000'
 
 // like the shell: $ hexo server -p5001
-let free = spawn('./node_modules/hexo/bin/hexo', ['server', `-p ${port}`])
+let free = spawn('hexo', ['server', `-p ${port}`])
 
 free.stdout.on('data', data => {
   console.log('standard output:\n' + data)
