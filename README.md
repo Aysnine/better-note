@@ -70,6 +70,47 @@ git pull
   };
   ```
 
+
+
 ## Github Pages
 
-[enter](https://aysnine.github.com)
+[aysnine.github.io](https://aysnine.github.io)
+
+### Deploy into Github Pages
+
+Install pugin
+
+```shell
+npm i -save hexo-deployer-git
+```
+
+ssh access
+
+- step1: set git **(if `id_rsa` is exist, to step 3)**
+
+  ```shell
+  git config --global user.name "test"
+  git config --global user.email "your@email.example"
+  ```
+
+
+- step2: new a ssh-key in local machine, got files: `id_rsa` `id_rsa.pub` **(Linux Shell)**
+
+  ```shell
+  ssh-keygen -t rsa -C "your@email.example" # for enter
+  ```
+
+- step3: copy the content of `id_rsa.pub` to Github -> Settings -> SSH and GPG keys
+
+- step4: test connection in local machine
+
+  ```shell
+  ssh git@github.com
+  ```
+
+set the `_config.yml` of this source project, and deploy
+
+```shell
+hexo deploy # short like: hexo d
+```
+

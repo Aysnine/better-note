@@ -1,10 +1,11 @@
 menu:
-    Blog: /
+    HOME: /
     Archive: /archives/
     GitHub: https://github.com/Aysnine
+    RSS: atom.xml
 
-favicon: /favicon.png
-logo: /favicon.png
+favicon: /cnine.png
+logo: /cnine.png
 
 # Comment
 # e.g disqus: seansun

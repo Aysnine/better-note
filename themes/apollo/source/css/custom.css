@@ -1,0 +1,10 @@
+
+header .logo-link img {
+	border-radius: 30px;
+}
+
+@media screen and (min-width: 700px) {
+	header {
+		padding: 20px 20px;
+	}
+}
