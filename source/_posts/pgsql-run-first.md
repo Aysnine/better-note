@@ -6,15 +6,15 @@ tags:
 
 在国内，MySQL 已是身经百战，而一款老牌 **开源** 数据库 PostgreSQL（简称pg） 在暗中磨砺许久，国内的云服务商也将其悄然上线了，作为关系型数据库中的一员，它到底有什么好？先来学习一个。
 
-![logo-pg](logo-pg.png)
-
 > **PostgreSQL: The world's most advanced open source database**
 
 <!-- more -->
 
 ## Before
 
-踩坑途中一波三折，以下是值得参考和学习的资料，先放在前面，**甚为重要** ：
+![logo-pg](logo-pg.png)
+
+踩坑途中一波三折，以下是值得参考和学习的资料，先放在前面，**甚为重要** 。
 
 ### 必备资料
 

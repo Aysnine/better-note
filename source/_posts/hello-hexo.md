@@ -10,13 +10,15 @@ tags: hexo
 
 <!-- more -->
 
+![hexo-on-github](hexo-on-github.png)
+
 Hexo 是基于 NodeJS 的工具，其核心作用，是**将 Markdown 文件整合成一堆可直接发布的静态网页**，虽说简单高效，多少还是需要一定的动手能力，以下是简要的入手流程，如有不妥请参照 [Hexo 官方中文主页](https://hexo.io/zh-cn/) 。
 
 ## Before
 
 在使用 Hexo 之前，首先要在本地装配 NodeJS 和 Git，详细过程可参考：
 
--  NodeJS：[正确的 NodeJS 安装姿势](/2017/08/10/nodejs-run-first/)
+- NodeJS：[正确的 NodeJS 安装姿势](/2017/08/10/nodejs-run-first/)
 - Git：[安装 Git 与配置公匙](/2017/08/10/git-run-first/)
 
 ## 安装 Hexo
