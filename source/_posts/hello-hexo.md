@@ -70,3 +70,7 @@ npm i hexo-browsersync --save
 ```
 
 重新启动即可看到效果，使得文件改动时后台自动刷新。这样一边 `ctrl+s` 保存文章，另一边浏览器就可以即时预览。这是借助 NodeJS 的 `fs` 模块，以及开源 NodeJS 模块 [browser-sync](http://www.browsersync.cn/) 实现的。
+
+## 配置 Github Pages
+
+[未完.]

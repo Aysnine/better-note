@@ -8,3 +8,12 @@ header .logo-link img {
 		padding: 20px 20px;
 	}
 }
+
+.post-title {
+	font-weight: normal;
+	text-shadow: 0px 0px 1px #c0c0c0;
+}
+
+.post h3 {
+	font-size: 18px；
+}

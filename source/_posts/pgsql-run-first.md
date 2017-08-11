@@ -6,13 +6,15 @@ tags:
 
 在国内，MySQL 已是身经百战，而一款老牌 **开源** 数据库 PostgreSQL（简称pg） 在暗中磨砺许久，国内的云服务商也将其悄然上线了，作为关系型数据库中的一员，它到底有什么好？先来学习一个。
 
+![logo-pg](logo-pg.png)
+
 > **PostgreSQL: The world's most advanced open source database**
 
 <!-- more -->
 
 ## Before
 
-踩坑途中一波三折，以下是值得参考和学习的资料，**甚为重要** ：
+踩坑途中一波三折，以下是值得参考和学习的资料，先放在前面，**甚为重要** ：
 
 ### 必备资料
 
@@ -21,17 +23,19 @@ tags:
 - [PostgreSQL 中文站点](http://postgres.cn)
   - [文档一览](http://postgres.cn/document)
 
-
-### 学习资源
-
-- 阿里云视频教程：[PostgreSQL 数据库从入门到精通](https://edu.aliyun.com/course/52) （需登录）
-- 英文学习站点：[PostgreSQL Tutorial](http://www.postgresqltutorial.com)
-
 ### 资源集
 
 - [PostgreSQL（数据库）资料](https://github.com/ty4z2008/Qix/blob/master/pg.md)
 - [德哥 PostgreSQL 系列](https://github.com/digoal/blog/blob/master/README.md)
 
+### 参考教程
+
+- [PostgreSQL新手入门 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2013/12/getting_started_with_postgresql.html)
+
+### 学习资源
+
+- 阿里云视频教程：[PostgreSQL 数据库从入门到精通](https://edu.aliyun.com/course/52) （需登录）
+- 英文学习站点：[PostgreSQL Tutorial](http://www.postgresqltutorial.com)
 
 ## CentOS 7 下安装 pg
 
@@ -47,6 +51,6 @@ tags:
 
 CentOS 7 以 yum 作为包管理器，在安装时需要 root 权限。按照以上几个简单的步骤，正常情况下安装没毛病。
 
-## 配置用户
+## 配置数据库用户
 
-Draft
+[未完.]
