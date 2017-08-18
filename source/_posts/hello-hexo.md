@@ -16,10 +16,11 @@ Hexo 是基于 NodeJS 的工具，其核心作用，是**将 Markdown 文件整�
 
 ## Before
 
-在使用 Hexo 之前，首先要在本地装配 NodeJS 和 Git，详细过程可参考：
+在使用 Hexo 之前，首先要在本地装配 NodeJS 和 Git，还要熟悉 Markdown 语法进行写作，详细过程可参考：
 
 - NodeJS：[正确的 NodeJS 安装姿势](/2017/08/10/nodejs-run-first/)
 - Git：[安装 Git 与配置公匙](/2017/08/10/git-run-first/)
+- Markdown：[Markdown - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/Markdown)
 
 ## 安装 Hexo
 
@@ -73,6 +74,15 @@ npm i hexo-browsersync --save
 
 重新启动即可看到效果，使得文件改动时后台自动刷新。这样一边 `ctrl+s` 保存文章，另一边浏览器就可以即时预览。这是借助 NodeJS 的 `fs` 模块，以及开源 NodeJS 模块 [browser-sync](http://www.browsersync.cn/) 实现的。
 
-## 配置 Github Pages
+到此，博客项目已经可以在本地跑起来，并且做到*即时预览*。光在本地跑肯定不够，还得部署到链接着公网的服务器才能分享。
 
-[未完.]
+## 部署到 Github Pages
+
+如果不是经验老道的大佬，这会是个不错的选择，**它会为你省去服务器和域名的开销**，良心十足。
+
+Github 作为大型开源代码托管平台，它提供 **静态站点托管服务** ，即 [Github Pages](https://help.github.com/articles/what-is-github-pages/) ，*建议在使用前先点进去看一眼说明书*。天下没有绝对免费的服务器，如果有，那必定又砍存储，又限带宽，甚至还出现流量不足。起初勉强能用就行，这都是后期要解决的。
+
+首先需要注册一个 Github 账号并登录，打开 [主页面](https://github.com/) ，点击下图所示的新建仓库：
+
+![new-repo](new-repo.png)
+
