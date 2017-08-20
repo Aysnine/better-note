@@ -8,12 +8,36 @@ header .logo-link img {
 		padding: 20px 20px;
 	}
 }
-
+.post h1 {
+	font-size: 24px;
+}
+.post h2 {
+	font-size: 20px;
+}
+.post h3 {
+	font-size: 16px;
+}
 .post-title {
-	font-weight: normal;
-	text-shadow: 0px 0px 1px #c0c0c0;
+	font-size: 18px !important;
+	font-weight: bold;
+	/*text-shadow: 0px 0px 1px #c0c0c0;*/
 }
 
-.post h3 {
-	font-size: 18px；
+.post-content h3:before {
+    content: "+";
+    color: #42b983;
+    position: absolute;
+    left: -0.7em;
+    top: -4px;
+    font-size: 1.2em;
+}
+
+
+.wrap .container {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.post-content p {
+	color: #7f8c8d;
 }
