@@ -1,10 +1,10 @@
 ---
-title: 快速高效的 Hexo 博客建站之旅 
+title: 快速高效的 hexo 博客建站之旅 
 date: 2017-08-09 12:32:33
 tags: hexo
 ---
 
-如果想来一手简单的免费建站体验，Hexo 是个不错的选择，正如官方的描述：
+想体验免费建站，hexo 是个不错的选择，正如官方标语：
 
 > **A fast, simple & powerful blog framework**
 
@@ -12,19 +12,19 @@ tags: hexo
 
 ![hexo-on-github](hexo-on-github.png)
 
-Hexo 是基于 NodeJS 的工具，其核心作用，是**将 Markdown 文件整合成一堆可直接发布的静态网页**，虽说简单高效，多少还是需要一定的动手能力，以下是简要的入手流程，如有不妥请参照 [Hexo 官方中文主页](https://hexo.io/zh-cn/) 。
+hexo 基于 NodeJS，核心作用是**将 Markdown 文件整合成可直接使用的静态网站文件结构**，简单高效，但需要一定的动手能力。以下是个人简要的上手流程，如有欠缺之处，以官方文档为主：[Hexo 官方中文主页](https://hexo.io/zh-cn/) 。
 
 ## Before
 
-在使用 Hexo 之前，首先要在本地装配 NodeJS 和 Git，还要熟悉 Markdown 语法进行写作，详细过程可参考：
+使用 Hexo 之前，首先要在本地装配 NodeJS 和 Git，且熟悉 Markdown 语法写作，以下是各项参考：
 
-- NodeJS：[正确的 NodeJS 安装姿势](/2017/08/10/nodejs-run-first/)
+- NodeJS：[我的 NodeJS 起飞姿势](/2017/08/10/nodejs-run-first/)
 - Git：[安装 Git 与配置公匙](/2017/08/10/git-run-first/)
 - Markdown：[Markdown - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/Markdown)
 
-## 安装 Hexo
+## 安装 hexo
 
-打开命令行，最好全局安装 Hexo 工具：
+在命令窗口下，使用 NodeJS 自带的包管理器 npm 全局安装 hexo 本地工具：
 
 ```shell
 npm i -g hexo-cli
