@@ -1,7 +1,9 @@
 ---
 title: PostgreSQL 数据库入坑记
 date: 2017-08-10 22:30:56
-tags: 
+tags:
+- PostgreSQL
+- Database
 ---
 
 在国内，MySQL 已是身经百战，而一款老牌 **开源** 数据库 PostgreSQL（简称pg） 在暗中磨砺许久，国内的云服务商也将其悄然上线了，作为关系型数据库中的一员，它到底有什么好？先来学习一个。
