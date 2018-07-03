@@ -22,6 +22,8 @@ module.exports = {
   serviceWorker: true,
   // theme: 'vue',
   themeConfig: {
+    displayAllHeaders: true,
+    activeHeaderLinks: true,
     repo: 'Aysnine/better-note',
     editLinks: true,
     docsDir: 'docs',
@@ -34,7 +36,19 @@ module.exports = {
         nav: [
           {
             text: '博客',
-            link: '/note/',
+            items: [
+              { text: 'JavaScript', link: '/note/JavaScript/' },
+              { text: 'VueJS', link: '/note/VueJS/' },
+              { text: 'EggJS', link: '/note/EggJS/' },
+              { text: '服务器', link: '/note/Server/' },
+              {
+                text: '数据库',
+                items: [
+                  { text: 'MySQL', link: '/note/MySQL' },
+                  { text: 'PostgreSQL', link: '/note/PostgreSQL' },
+                ]
+              },
+            ]
           },
           {
             text: '陋室',
@@ -45,30 +59,12 @@ module.exports = {
             link: '/quick/',
           },
         ],
-        // sidebar: {
-        //   // '/guide/': genSidebarConfig('博客')
-        // }
+        sidebar: {
+          '/note/JavaScript/': [
+            '', 'a', 'b'
+          ]
+        }
       }
     }
   }
 };
-
-function genSidebarConfig(title) {
-  return [
-    {
-      title,
-      collapsable: false,
-      children: [
-        '',
-        'getting-started',
-        'basic-config',
-        'assets',
-        'markdown',
-        'using-vue',
-        'custom-themes',
-        'i18n',
-        'deploy'
-      ]
-    }
-  ]
-}
