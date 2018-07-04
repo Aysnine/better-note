@@ -1,5 +1,5 @@
 {
-  "name": "better-bnote",
+  "name": "better-note",
   "version": "1.0.0",
   "description": "mine blog 'better-note' source file",
   "main": "index.js",
@@ -7,11 +7,12 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aysnine/better-bnote.git"
+    "url": "git+https://github.com/Aysnine/better-note.git"
   },
   "keywords": [
     "blog",
@@ -20,9 +21,9 @@
   "author": "CNine",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Aysnine/better-bnote/issues"
+    "url": "https://github.com/Aysnine/better-note/issues"
   },
-  "homepage": "https://github.com/Aysnine/better-bnote#readme",
+  "homepage": "https://github.com/Aysnine/better-note#readme",
   "devDependencies": {
     "vuepress": "^0.10.2"
   }
