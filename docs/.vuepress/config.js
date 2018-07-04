@@ -24,8 +24,7 @@ let nav = [
   },
   {
     text: '速食',
-    link: '/quick/',
-    auto: true
+    link: '/quick/'
   },
 ];
 
