@@ -2558,6 +2558,17 @@ glob-to-regexp@^0.3.0:
   version "0.3.0"
   resolved "http://registry.npm.taobao.org/glob-to-regexp/download/glob-to-regexp-0.3.0.tgz#8c5a1494d2066c570cc3bfe4496175acc4d502ab"
 
+glob@7.0.5:
+  version "7.0.5"
+  resolved "http://registry.npm.taobao.org/glob/download/glob-7.0.5.tgz#b4202a69099bbb4d292a7c1b95b6682b67ebdc95"
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.2"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
 glob@7.0.x:
   version "7.0.6"
   resolved "http://registry.npm.taobao.org/glob/download/glob-7.0.6.tgz#211bafaf49e525b8cd93260d14ab136152b3f57a"
@@ -3509,6 +3520,12 @@ lru-cache@^4.0.1, lru-cache@^4.1.1, lru-cache@^4.1.2:
   dependencies:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
+
+ls@^0.2.1:
+  version "0.2.1"
+  resolved "http://registry.npm.taobao.org/ls/download/ls-0.2.1.tgz#0d96cc870600806fae6bd89297dc5c66454cbf71"
+  dependencies:
+    glob "7.0.5"
 
 make-dir@^1.0.0:
   version "1.3.0"
@@ -5798,6 +5815,10 @@ vuepress-html-webpack-plugin@^3.2.0:
     tapable "^1.0.0"
     toposort "^1.0.0"
     util.promisify "1.0.0"
+
+vuepress-theme-ajv@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/vuepress-theme-ajv/download/vuepress-theme-ajv-1.0.2.tgz#8e906388a1b0d4cab2dcbd629750ffca8b7f0f50"
 
 vuepress@^0.10.2:
   version "0.10.2"
