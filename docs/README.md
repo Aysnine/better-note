@@ -3,5 +3,5 @@ home: true
 heroImage: /hero.jpg
 actionText: 万年更新 →
 actionLink: /note/JavaScript/
-footer: 'CONTACT: cyun9@foxmail.com QQ2290384229'
+footer: '{ "email": "cyun9@foxmail.com", "qq": "2290384229" }'
 ---

@@ -23,14 +23,14 @@ let nav = [
     auto: true
   },
   {
-    text: '速食',
+    text: '速食记',
     link: '/quick/'
   },
 ];
 
 // 文件排序，默认显示最新，README在最前
 function sortFile(files) {
-  console.log(files.map(i => i.path))
+  // console.log(files.map(i => i.path))
   files.sort((a, b) => (a.stat.ctime < b.stat.ctime))
   let o = files.find(i => i.name === 'README')
   if (o) {
