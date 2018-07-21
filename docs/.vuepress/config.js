@@ -45,7 +45,7 @@ module.exports = {
     '/': {
       lang: 'zh-CN',
       title: "Better Note :)",
-      description: "Sometime+s naiv5 👓 ，日常见闻笔记记"
+      description: "朝朝夕夕，忘乎所以"
     }
   },
   serviceWorker: true,
