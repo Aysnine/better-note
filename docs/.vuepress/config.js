@@ -3,29 +3,29 @@ const ls = require('ls');
 
 let nav = [
   {
-    text: '博客',
+    text: '📗 笔记',
     items: [
-      { text: 'JavaScript', link: '/note/JavaScript/', auto: true },
-      { text: 'VueJS', link: '/note/VueJS/', auto: true },
-      { text: 'EggJS', link: '/note/EggJS/', auto: true },
-      {
-        text: '数据库',
-        items: [
-          { text: 'MySQL', link: '/note/MySQL/', auto: true },
-          { text: 'PostgreSQL', link: '/note/PostgreSQL/', auto: true },
-        ]
-      },
+      { text: '🦄 Web前端', link: '/note/FrontEnd/', auto: true },
+      { text: '🐢 NodeJS', link: '/note/NodeJS/', auto: true },
+      { text: '🐘 数据库', link: '/note/Database/', auto: true },
+      { text: '🐧 Linux', link: '/note/Linux/', auto: true },
+      // {
+      //   text: '数据库',
+      //   items: [
+      //     { text: 'MySQL', link: '/note/Database/MySQL/', auto: true },
+      //     { text: 'PostgreSQL', link: '/note/Database/PostgreSQL/', auto: true },
+      //   ]
+      // },
     ]
   },
   {
-    text: '陋室',
-    link: '/think/',
-    auto: true
+    text: '👓 收藏集',
+    link: '/star/'
   },
   {
-    text: '速食记',
+    text: '⚡️ 速食记',
     link: '/quick/'
-  },
+  }
 ];
 
 // 文件排序，默认显示最新，README在最前
@@ -44,7 +44,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "🍓 Better Note",
+      title: "📚 Better Note",
       description: "CNine的日常笔记"
     }
   },

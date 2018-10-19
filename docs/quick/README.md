@@ -5,14 +5,14 @@ sidebar: auto
 # 速食记
 
 ::: tip
-小知识速记，将零散的小知识堆积于此
+将零散的代码代码放置于此，便于在日常使用中查找
 :::
 
-## CentOS 7 快速安装最新版 FFmpeg
+## CentOS 7 安装最新版 FFmpeg
 
 以 x86_64 release 版本为例：
 
-```shell
+```bash
 mkdir ffmpeg-install
 cd ffmpeg-install
 wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz
@@ -21,15 +21,15 @@ tar xvf ffmpeg-release-64bit-static.tar.xz # 解压
 
 此时 `ffmpeg-install` 文件夹下出现最新版本解压后的文件夹，文件夹名字带版本号，以实际情况为准，**切换至解压出的文件夹下**，执行命令：
 
-```shell
-copy ffmpeg ffprobe /usr/local/bin/
+```bash
+cp ffmpeg ffprobe /usr/local/bin/
 ```
 
-可执行文件有两个，上述命令将其复制到 `bin` 目录下，即可使用 `ffmpeg` 命令。
+可执行文件有两个，使用以上命令复制到 `bin` 目录下，就能使用 `ffmpeg` 命令。
 
-卸载也就简单了，直接删除这两个文件：
+如需卸载，直接删除这两个文件：
 
-```shell
+```bash
 rm /usr/local/bin/ffmpeg /usr/local/bin/ffprobe
 ```
 
@@ -37,10 +37,10 @@ rm /usr/local/bin/ffmpeg /usr/local/bin/ffprobe
 
 官方指南：[FFrequently Asked Questions](https://www.johnvansickle.com/ffmpeg/faq/)
 
-## curl 快速测试 url 请求信息
+## curl 快速测试 url 并查看返回头
 
-```shell
-curl -I https://example.com   # 只返回请求/响应头，便于 url 试探，丢弃 body 部分以节省时间
+```bash
+curl -I https://example.com   # 只获取请求/响应头
 
 # HTTP/1.1 200 OK
 # Content-Encoding: gzip
@@ -56,7 +56,7 @@ curl -I https://example.com   # 只返回请求/响应头，便于 url 试探，
 # Content-Length: 606
 ```
 
-## vue-cli 项目的 ESlint & Prettier 配置
+## vue-cli3 之 ESlint & Prettier 配置
 
 此为 **package.json**，其它配置文件同理
 
@@ -99,13 +99,13 @@ curl -I https://example.com   # 只返回请求/响应头，便于 url 试探，
 ```js
 // 取当前时间戳
 +new Date()         // 1531369989992
-// 浮点数去除小数位（非四舍五入）
+// 浮点数去除小数位（！非四舍五入）
 ~~132.456           // 132
 ```
 
 ## Nginx 常用命令
 
-```shell
+```bash
 nginx -s stop       # 停止
 nginx -s reopen     # 重开
 nginx -s reload     # 重载配置
@@ -118,14 +118,12 @@ nginx -v            # 查看版本
 nginx -V            # 查看版本及配置
 ```
 
-## Nginx 反向代理配置
+## Nginx Http 反向代理配置
 
 `vi /etc/nginx/nginx.conf`
 
-```
-...
+```nginx
 http {
-    ...
     # Example proxy for http://example.cnine.me to this server:80
     server {
         listen          80 default_server;
@@ -138,7 +136,5 @@ http {
             proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
         }
     }
-    ...
 }
-...
 ```
