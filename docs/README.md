@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: /me.jpg
-actionText: 万年更新 →
+heroImage: /me.png
+actionText: ENTER 🖖
 actionLink: /note/JavaScript/
-footer: '{ "email": "cyun9@foxmail.com", "qq": "2290384229" }'
+footer: '{ "email": "cnine229@qq.com", "qq": "2290384229" }'
 ---

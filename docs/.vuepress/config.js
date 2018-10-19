@@ -44,8 +44,8 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Better Note :)",
-      description: "朝朝夕夕，忘乎所以"
+      title: "🍓 Better Note",
+      description: "CNine的日常笔记"
     }
   },
   serviceWorker: true,
