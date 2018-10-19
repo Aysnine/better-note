@@ -24,7 +24,6 @@ const makeHell = () => {
     h.push({ reg: new RegExp(i.length > 1 ? '('+i.join('|') +')' : i[0] , g[1]), make: books.match[key] })
   }
   hell = h
-  console.log(h)
 }
 export default (who) => {
   // Be fast
