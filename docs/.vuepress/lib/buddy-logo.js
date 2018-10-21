@@ -11,6 +11,15 @@ const books = {
     'koa/i'(who) {
       who = who.toLowerCase()
       return `https://github.com/koajs/koa/raw/master/docs/logo.png`
+    },
+    'postgresql,mysql,redis,browsersync,gulp,nodejs,stylus,webpack,npm,yarn,centos,bash,archlinux,eslint,docker,lodash,vscode/i'(who) {
+      who = who.toLowerCase()
+      who === 'vscode' ? who = 'visual-studio-code' : 0
+      return `https://cdn.svgporn.com/logos/${who}.svg`
+    },
+    'aliyun/i'(who) {
+      who = who.toLowerCase()
+      return 'https://cn.aliyun.com/favicon.ico'
     }
   }
 }

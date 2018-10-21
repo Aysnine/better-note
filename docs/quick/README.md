@@ -118,7 +118,7 @@ nginx -v            # 查看版本
 nginx -V            # 查看版本及配置
 ```
 
-## Nginx Http 反向代理配置
+## Nginx HTTP 反向代理配置
 
 `vi /etc/nginx/nginx.conf`
 

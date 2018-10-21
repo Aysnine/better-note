@@ -1,6 +1,6 @@
 <template>
-  <img v-if="src" class="buddy-logo" :src="src" />
-  <span v-else="src" class="buddy-logo text-logo">{{ who }}</span>
+  <img v-if="src" class="buddy-logo" :src="src" :alt="who" :title="who" />
+  <span v-else="src" class="buddy-logo text-logo" :alt="who" :title="who">{{ who }}</span>
 </template>
 
 <script>
@@ -27,7 +27,8 @@ export default {
 img.buddy-logo
   vertical-align middle
 .text-logo
-  font-weight 300
+  font-weight bold
   color #7d8aa4
   border-bottom 2px solid #7d8aa4
+  display inline-block
 </style>
