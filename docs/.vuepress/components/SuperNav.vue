@@ -4,13 +4,13 @@
       <template v-if="item.items && item.items.length>0">
         <div class="super-nav-group">
           <div class="super-nav-item" v-for="item2 in item.items">
-            <a :href="item2.link">{{ item2.text }}</a>
+            <router-link :to="item2.link">{{ item2.text }}</router-link>
           </div>
         </div>
       </template>
       <template v-else>
         <div class="super-nav-item">
-          <a :href="item.link">{{ item.text }}</a>
+          <router-link :to="item.link">{{ item.text }}</router-link>
         </div>
       </template>
     </template>
