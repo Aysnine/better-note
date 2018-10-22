@@ -2,7 +2,7 @@
 
 > PipelineDB 是类 PostgreSQL 数据库，所以 PostgreSQL 中的功能也是可用的，但请注意自己的 PipelineDB 是基于哪个 PostgreSQL 版本。
 
-什么是流计算？这里针对物联网设备的数据，有一个小例子。
+什么是流计算？这里针对物联网方面的数据处理，有一个小例子。
 
 某校给每间学生寝室安装了智能热水器，共 100 个按 1~100 编号，热水器可以根据自身情况，灵活上传实时功耗。
 
@@ -83,3 +83,6 @@ FROM
 -- 直接从统计视图查询统计的结果
 SELECT * FROM state_heater_online;
 ```
+
+PipelineDB 的思想，就是先定义好数据的入口，也就是创建流，然后基于流，把统计的 SQL 语句创建成 CONTINUOUS VIEW。
+当有数据插入流，PipelineDB 会去更新相关的 CONTINUOUS VIEW，所用时间几乎是恒定的，毫秒级别，因为统计已经在数据插入的时候完成了合并计算。
