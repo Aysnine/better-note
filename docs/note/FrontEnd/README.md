@@ -13,5 +13,7 @@
 <BuddyLogo who="ESLint" />
 <BuddyLogo who="Lodash" />
 <BuddyLogo who="VSCode" />
+<BuddyLogo who="MockJS" />
+<BuddyLogo who="SheetJS" />
 
 <CateList />
