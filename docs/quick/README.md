@@ -5,8 +5,28 @@ sidebar: auto
 # 速食记
 
 ::: tip
-将零散的代码代码放置于此，便于在日常使用中查找
+将零散的代码、知识放置于此，便于在日常使用中查找
 :::
+
+## Docker 启动 MySQL
+
+MySQL 5.7
+
+```bash
+docker run \ 
+    --name mysql57 \ # 容器别名
+    -e MYSQL_ROOT_PASSWORD=scitc2018 \ # root 用户密码
+    -e MYSQL_DATABASE=scitc \ # 默认创建的库
+    -e MYSQL_USER=scitc \ # 默认创建的用户
+    -e MYSQL_PASSWORD=scitc2018 \ # 默认创建的用户的密码
+    --character-set-server=utf8mb4 \ # 默认字符集
+    --collation-server=utf8mb4_unicode_ci \ # 默认字符集
+    --lower_case_table_names \ # 使用全小写表名，避免 linux 服务器上区分大小写
+    --restart=always \ # 跟随 Docker 自启动
+    -p 3316:3306 \  # 端口映射，本机端口:容器端口
+    -d \      # 后台运行
+    mysql:5.7 # 官方 5.7
+```
 
 ## CentOS 7 安装最新版 FFmpeg
 
