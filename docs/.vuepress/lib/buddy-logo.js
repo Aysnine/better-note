@@ -8,10 +8,10 @@ const books = {
       who === 'moment' ? who = 'momentjs' : 0
       return `https://www.bootcdn.cn/assets/img/${who}.svg`
     },
-    'koa/i'(who) {
-      who = who.toLowerCase()
-      return `https://github.com/koajs/koa/raw/master/docs/logo.png`
-    },
+    // 'koa/i'(who) {
+    //   who = who.toLowerCase()
+    //   return `https://github.com/koajs/koa/raw/master/docs/logo.png`
+    // },
     'postgresql,mysql,redis,browsersync,gulp,nodejs,stylus,webpack,npm,yarn,centos,bash,archlinux,eslint,docker,lodash,vscode,express/i'(who) {
       who = who.toLowerCase()
       who === 'vscode' ? who = 'visual-studio-code' : 0
