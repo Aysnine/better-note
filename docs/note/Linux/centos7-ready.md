@@ -197,9 +197,9 @@ curl -sSL https://get.daocloud.io/docker | sh
 卸载：
 
 ```bash
-yum remove docker \
-			docker-common \
-			container-selinux \
-			docker-selinux \
-			docker-engine
+yum remove docker \ 
+			docker-common \ 
+			container-selinux \ 
+			docker-selinux \ 
+			docker-engine 
 ```
