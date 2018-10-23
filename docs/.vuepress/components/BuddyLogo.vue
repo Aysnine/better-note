@@ -24,6 +24,7 @@ export default {
   height 32px
   padding 8px
   margin 8px
+  transition all .3s
 img.buddy-logo
   vertical-align middle
 .text-logo
@@ -31,4 +32,11 @@ img.buddy-logo
   color #7d8aa4
   border-bottom 2px solid #7d8aa4
   display inline-block
+@media (max-width 960px)
+  .buddy-logo
+    height 18px
+    padding 4px
+    margin 4px
+  .text-logo
+    font-weight 300
 </style>
