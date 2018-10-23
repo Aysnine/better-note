@@ -54,7 +54,7 @@ img.buddy-logo
   text-align center
   padding 10px 20px
   left 50%
-  margin-left -60px
+  margin-left -80px
   background #282c3475
   color #fff
   border-radius 5px
