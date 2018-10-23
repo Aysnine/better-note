@@ -33,9 +33,9 @@ const books = {
     'elementui/i'() {
       return '/buddy-logos/elementui.svg'
     },
-    'layui/i'() {
-      return 'https://res.layui.com/static/images/layui/logo-2.png'
-    }
+    // 'layui/i'() {
+    //   return 'https://res.layui.com/static/images/layui/logo-2.png'
+    // }
   }
 }
 
