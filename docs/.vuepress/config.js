@@ -9,6 +9,7 @@ let nav = [
       { text: '🐢 NodeJS', link: '/note/NodeJS/', auto: true },
       { text: '🐘 数据库', link: '/note/Database/', auto: true },
       { text: '🐧 Linux', link: '/note/Linux/', auto: true },
+      { text: '🚀 探索', link: '/note/Explore/', auto: true },
       // {
       //   text: '数据库',
       //   items: [
