@@ -25,7 +25,8 @@ const books = {
       return 'https://cn.aliyun.com/favicon.ico'
     },
     'd2,d2admin,d2projects/i'() {
-      return 'https://d2-projects.github.io/d2-admin-doc/logo@2x.png'
+      // return 'https://d2-projects.github.io/d2-admin-doc/logo@2x.png'
+      return 'https://d2admin.fairyever.com/image/theme/d2/logo/all.png'
     },
     'socket.io'() {
       return 'https://cdn.svgporn.com/logos/socket.io.svg'
