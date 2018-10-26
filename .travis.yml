@@ -1,17 +1,45 @@
 language: node_js
+
 node_js: stable
 
 cache:
-  directories:
-    - "node_modules"
+    apt: true
+    directories:
+        - node_modules
+
+notifications:
+    email:
+        recipients:
+            - cnine229@qq.com
+        on_success: change
+        on_failure: always
+
+env:
+    global:
+        # Github Pages
+        - GH_REF: github.com/Aysnine/aysnine.github.io.git
+        - GH_CUSTOM_DOMAIN: cnine.me
+
+# turn off the clone of submodules for change the SSH to HTTPS in .gitmodules to avoid the error
+git:
+  submodules: false
+
+before_install:
+    # Use sed to replace the SSH URL with the public URL if .gitmodules exists
+    - test -e ".gitmodules" && sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    # update the submodule in repo by manual
+    - git submodule update --init --recursive
+    - export TZ='Asia/Shanghai'
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+    - export PATH=$HOME/.yarn/bin:$PATH
+    - chmod +x ./deploy.sh
 
 branches:
   only:
   - master
 
 script:
-  - ./deploy.sh
+  - yarn docs:build
 
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
+after_install:
+  - ./deploy.sh

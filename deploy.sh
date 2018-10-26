@@ -1,25 +1,23 @@
 #!/usr/bin/env sh
 
 # abort on errors
-set -e
+set -ev
 
-# build
-npm run docs:build
+# clone
+git clone https://${GH_REF} .deploy_git
+cd .deploy_git
+git checkout master
+mv .deploy_git/.git/ docs/.vuepress/dist
 
 # navigate into the build output directory
 cd docs/.vuepress/dist
 
 # if you are deploying to a custom domain
-echo 'cnine.me' > CNAME
+echo ${GH_CUSTOM_DOMAIN} > CNAME
 
-git init
-git add -A
-git commit -m 'deploy'
+# add commit timestamp
+git add .
+git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
 
-# if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:Aysnine/aysnine.github.io.git master
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
-
-cd -
+# Github Pages
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
