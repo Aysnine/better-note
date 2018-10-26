@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # abort on errors
-# set -e
+set -ev
 
 # clone
 git clone https://${GH_REF} .deploy_git

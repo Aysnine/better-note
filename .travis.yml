@@ -33,5 +33,5 @@ before_install:
 script:
   - yarn docs:build
 
-after_install:
+after_script:
   - ./deploy.sh
