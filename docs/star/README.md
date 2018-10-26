@@ -10,6 +10,7 @@ sidebar: auto
 - [vuejs/awesome-vue](https://github.com/vuejs/awesome-vue)
 - [Awesome Go](https://awesome-go.com/)
 - [Awesome Python](https://awesome-python.com/)
+- [ligurio/awesome-ci](https://github.com/ligurio/awesome-ci/blob/master/README.md)
 
 ## ⚙️ 自建服务系列
 
