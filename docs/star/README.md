@@ -15,3 +15,7 @@ sidebar: auto
 
 - [Gogs 自建 Git 服务器](https://gogs.io/)
 - [Frp 内网穿透](https://github.com/fatedier/frp)
+
+## ☢️ Chrome 技能
+
+- [修改线上站点的静态资源，进行 Network 覆盖调试](https://umaar.com/dev-tips/162-network-overrides/)
