@@ -15,28 +15,24 @@ const books = {
     'postgresql,mysql,redis,browsersync,gulp,nodejs,stylus,webpack,npm,yarn,centos,bash,archlinux,eslint,docker,lodash,vscode,express,pug,jade,raspberry-pi,babel,git,github,stackoverflow,php,nginx/i'(who) {
       who = who.toLowerCase()
       who === 'vscode' ? who = 'visual-studio-code' : 0
-      return `https://cdn.svgporn.com/logos/${who}.svg`
+      return `/buddy-logos/logos/${who}.svg`
     },
     'cpp'() {
-      return `https://cdn.svgporn.com/logos/c%2B%2B.svg`;
+      return `/buddy-logos/logos/c%2B%2B.svg`;
     },
     'aliyun/i'(who) {
       who = who.toLowerCase()
       return 'https://cn.aliyun.com/favicon.ico'
     },
     'd2,d2admin,d2projects/i'() {
-      // return 'https://d2-projects.github.io/d2-admin-doc/logo@2x.png'
       return 'https://d2admin.fairyever.com/image/theme/d2/logo/all.png'
     },
     'socket.io'() {
-      return 'https://cdn.svgporn.com/logos/socket.io.svg'
+      return '/buddy-logos/logos/socket.io.svg'
     },
     'elementui/i'() {
-      return '/buddy-logos/elementui.svg'
-    },
-    // 'layui/i'() {
-    //   return 'https://res.layui.com/static/images/layui/logo-2.png'
-    // }
+      return '/buddy-logos/logos/element.svg'
+    }
   }
 }
 
