@@ -7,6 +7,7 @@ set -ev
 git clone https://${GH_REF} .deploy_git
 cd .deploy_git
 git checkout master
+cd ..
 mv .deploy_git/.git/ docs/.vuepress/dist
 
 # navigate into the build output directory
