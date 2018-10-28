@@ -12,6 +12,14 @@ sidebar: auto
 - [Awesome Python](https://awesome-python.com/)
 - [ligurio/awesome-ci](https://github.com/ligurio/awesome-ci/blob/master/README.md)
 
+## 🧐 我想知道
+
+- [哪个 Linux 发行版用的人多？](http://7z.cx/dsc/)
+- [浏览器的某新特性我能用了吗？](https://caniuse.com/)
+- [数据库排名哪家强？](https://db-engines.com/en/ranking)
+- [编程语言排名哪家强？](https://www.tiobe.com/tiobe-index/)
+- [Github 用户编程语言哪家强？](https://www.benfrederickson.com/ranking-programming-languages-by-github-users/)
+
 ## ⚙️ 自建服务系列
 
 - [Gogs 自建 Git 服务器](https://gogs.io/)
