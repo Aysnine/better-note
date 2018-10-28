@@ -8,6 +8,14 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## CentOS7 安装 VeryNginx 的坑
+
+我靠，如果报 `not fount`，肯定是少了依赖，那就把这几个装上：
+
+```
+yum install g++ gcc openssl openssl-devel openssl-libs pcre pcre-devel -y
+```
+
 ## Docker 启动 MySQL
 
 MySQL 5.7
