@@ -10,11 +10,33 @@ sidebar: auto
 
 ## CentOS7 安装 VeryNginx 的坑
 
-我靠，如果报 `not fount`，肯定是少了依赖，那就把这几个装上：
+我靠官网为啥不说，如果安装时报 `not fount`，肯定是少了依赖，那就把这几个装上：
 
 ```
 yum install g++ gcc openssl openssl-devel openssl-libs pcre pcre-devel -y
 ```
+
+还需要一个名为 `nginx` 的用户，可以创建，也可以改 `/opt/verynginx/openresty/nginx/conf/nginx.conf` 里的 `user` 名。
+
+以下是使用操作：
+
+```
+#启动服务
+/opt/verynginx/openresty/nginx/sbin/nginx
+
+#停止服务
+/opt/verynginx/openresty/nginx/sbin/nginx -s stop
+
+#重启服务
+/opt/verynginx/openresty/nginx/sbin/nginx -s reload
+```
+
+为了方便，建立一个链接：
+
+```
+ln -s /opt/verynginx/openresty/nginx/sbin/nginx /usr/local/bin/nginx
+```
+这样就可以愉快地使用 `nginx` 命令了
 
 ## Docker 启动 MySQL
 
