@@ -8,6 +8,29 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## CentOS7 的 NodeJS 环境布置
+
+以 node 8x 为例
+```bash
+# 卸载旧的
+yum erase nodejs node -y
+# 设置 nodesource 源
+curl -sL https://rpm.nodesource.com/setup_8.x | bash -
+# 安装新的
+yum install nodejs -y
+# 设置淘宝 npm 源
+npm config set registry https://registry.npm.taobao.org
+```
+
+## NodeJS 安装常用的 cli
+
+```bash
+# vue-cli3 脚手架，new
+# react 脚手架
+# angular 脚手架，new
+npm i -g yarn @vue/cli create-react-app @angular/cli 
+```
+
 ## CentOS7 安装 VeryNginx 的坑
 
 我靠官网为啥不说，如果安装时报 `not fount`，肯定是少了依赖，那就把这几个装上：
@@ -20,7 +43,7 @@ yum install g++ gcc openssl openssl-devel openssl-libs pcre pcre-devel -y
 
 以下是使用操作：
 
-```
+```bash
 #启动服务
 /opt/verynginx/openresty/nginx/sbin/nginx
 
@@ -33,7 +56,7 @@ yum install g++ gcc openssl openssl-devel openssl-libs pcre pcre-devel -y
 
 为了方便，建立一个链接：
 
-```
+```bash
 ln -s /opt/verynginx/openresty/nginx/sbin/nginx /usr/local/bin/nginx
 ```
 这样就可以愉快地使用 `nginx` 命令了
