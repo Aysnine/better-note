@@ -33,10 +33,10 @@ npm i -g yarn @vue/cli create-react-app @angular/cli
 
 ## CentOS7 安装 VeryNginx 的坑
 
-我靠官网为啥不说，如果安装时报 `not fount`，肯定是少了依赖，那就把这几个装上：
+如果安装时报 `not fount`，肯定是少了依赖，那就把这几个装上：
 
 ```
-yum install g++ gcc openssl openssl-devel openssl-libs pcre pcre-devel -y
+yum install gcc pcre pcre-devel openssl openssl-devel -y
 ```
 
 还需要一个名为 `nginx` 的用户，可以创建，也可以改 `/opt/verynginx/openresty/nginx/conf/nginx.conf` 里的 `user` 名。
