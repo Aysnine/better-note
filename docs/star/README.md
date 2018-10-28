@@ -21,3 +21,7 @@ sidebar: auto
 ## ☢️ Chrome 技能
 
 - [修改线上站点的静态资源，进行 Network 覆盖调试](https://umaar.com/dev-tips/162-network-overrides/)
+
+## 🔫 工具箱
+
+- [Dive ：看看 Docker 镜像 layer 里都有啥](https://github.com/wagoodman/dive)
