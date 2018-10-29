@@ -8,7 +8,7 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
-## CentOS7 的 NodeJS 环境布置
+## CentOS 7 的 NodeJS 环境布置
 
 以 node 8x 为例
 ```bash
@@ -31,7 +31,7 @@ npm config set registry https://registry.npm.taobao.org
 npm i -g yarn @vue/cli create-react-app @angular/cli 
 ```
 
-## CentOS7 安装 VeryNginx 的坑
+## CentOS 7 安装 VeryNginx 的坑
 
 如果安装时报 `not fount`，肯定是少了依赖，那就把这几个装上：
 
