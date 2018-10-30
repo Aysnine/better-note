@@ -9,19 +9,16 @@ let nav = [
       { text: '🐢 NodeJS', link: '/note/NodeJS/', auto: true },
       { text: '🐘 数据库', link: '/note/Database/', auto: true },
       { text: '🐧 Linux', link: '/note/Linux/', auto: true },
-      { text: '🚀 探索', link: '/note/Explore/', auto: true },
-      // {
-      //   text: '数据库',
-      //   items: [
-      //     { text: 'MySQL', link: '/note/Database/MySQL/', auto: true },
-      //     { text: 'PostgreSQL', link: '/note/Database/PostgreSQL/', auto: true },
-      //   ]
-      // },
+      { text: '🚀 探索', link: '/note/Explore/', auto: true }
     ]
   },
   {
     text: '👓 收藏集',
     link: '/star/'
+  },
+  {
+    text: '🌈 作品',
+    link: '/project/'
   },
   {
     text: '⚡️ 速食记',
