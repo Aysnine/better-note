@@ -15,6 +15,7 @@ sidebar: auto
 
 ## 🧐 我想知道
 
+- [Web 技术幸存名单](https://w3techs.com/)
 - [哪个 Linux 发行版用的人多？](http://7z.cx/dsc/)
 - [浏览器的某新特性我能用了吗？](https://caniuse.com/)
 - [数据库排名哪家强？](https://db-engines.com/en/ranking)
