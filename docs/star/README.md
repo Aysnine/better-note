@@ -6,6 +6,7 @@ sidebar: auto
 
 ## 👓 Awesomes 系列
 
+- [D2 前端资源库](https://awesome.fairyever.com/)
 - [Awesomes-Web前端开发资源库](https://www.awesomes.cn/)
 - [vuejs/awesome-vue](https://github.com/vuejs/awesome-vue)
 - [Awesome Go](https://awesome-go.com/)
