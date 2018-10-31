@@ -2,6 +2,10 @@
 
 > 到 ElementUI 2.4.8 为止，Tree 组件还不能一次性控制所有节点是否可选，这里做了实验性的尝试，在切换全局 disabled 的同时，保留每个节点原本的 disabled 状态，做到可恢复。
 
+效果图：
+
+![效果图](./elementui-tree-disabled/el-tree-disabled-all.gif)
+
 ```vue
 <template>
   <div>
