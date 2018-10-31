@@ -1,6 +1,6 @@
-# ElementUI 之 Tree 组件所有子节点切换 disabled
+# ElementUI 之 Tree 组件切换全局 disabled
 
-> 到 ElementUI 2.4.8 为止，Tree 组件还不能自如地一次性控制所有节点是否可选，这里做了实验性的尝试。
+> 到 ElementUI 2.4.8 为止，Tree 组件还不能一次性控制所有节点是否可选，这里做了实验性的尝试，在切换全局 disabled 的同时，保留每个节点原本的 disabled 状态，做到可恢复。
 
 ```vue
 <template>
@@ -63,7 +63,7 @@ export default {
     };
   },
   computed: {
-    // 包装原 data,，全局 disabled 开关，自动设置和清理子节点 disabled 状态
+    // 包装原 data，根据全局 disabled 开关，自动设置和清理子节点 disabled 状态
     // 使用 _disabled 存储原 disabled 值，在全局 disabled 关闭时恢复状态
     filtedData() {
       if (this.disabledAll) {
