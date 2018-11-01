@@ -7,10 +7,19 @@ $codeBgColor = #282c34 // 代码背景颜色
   .hero
     img
       max-height 240px
+      transition all .25s
+      @media (max-width 719px)
+        max-height 140px
     h1
       font-weight 100
+      transition all .25s
+      @media (max-width 719px)
+        font-size 32px
     .description
       font-weight 100
+      transition all .25s
+      @media (max-width 719px)
+        font-size 18px
 
 .navbar
   .site-name
