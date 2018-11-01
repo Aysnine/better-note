@@ -19,6 +19,7 @@ sidebar: auto
 - 包含 vuex、vue-router、pug、stylus
 - 引入完整的 ElementUI 组件
 - Mock 模拟数据增强版
+- 自带 XSS 防护，浏览内容安全可靠
 - 异步请求日志可视化（含 Mock 请求）
 - 登陆认证逻辑集成
 - 前台页面、后台页面可自定义扩展
@@ -39,8 +40,10 @@ sidebar: auto
 - 使用 vue-cli3 构建
 - 基于 vue2x
 - 包含 pug、stylus
+- 适配移动端
 - 长段文字自动折叠
 - Mock 模拟数据增强版
+- 自带 XSS 防护，浏览内容安全可靠
 - 异步请求日志可视化（含 Mock 请求）
 
 预览地址：[去看看](http://ojbk.xin/vue-words/)
