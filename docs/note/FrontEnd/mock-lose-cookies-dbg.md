@@ -22,7 +22,7 @@ Mock.XHR.prototype.send = function () {
 ### 复现的条件
 
 - 后端配置允许跨域
-- 前端引用 MockJS 模块，不用设置拦截项
+- 前端引用 MockJS 模块，并调用过 `Mock.mock()`
 - 前端对后端做跨域请求
 - 请求参数中设置 `withCredentials = true`
 - 请求头中带 Cookies
