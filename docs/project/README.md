@@ -44,3 +44,17 @@ sidebar: auto
 - 异步请求日志可视化（含 Mock 请求）
 
 预览地址：[去看看](http://ojbk.xin/vue-words/)
+
+## 简单的 Vue 表格组件
+
+造轮子系列，一个结合 Vue 编写的数据表格组件。表格组件位于：`src/components/TableMan/index.vue`，可直接复制到你的项目中，并参考 `src/App.vue` 食用 :)
+
+## Features
+
+- 固定列
+- 固定表头
+- ...
+
+源码地址：[Github](https://github.com/Aysnine/table-man.git)
+
+预览地址：[去看看](http://ojbk.xin/table-man/)
