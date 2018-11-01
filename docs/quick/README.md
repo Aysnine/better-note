@@ -8,6 +8,30 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## vue-cli3 项目配置 stylus nib
+
+安装依赖：
+
+```bash
+yarn add nib
+```
+
+在 `vue.config.js` 文件中加入相关 Loader 配置：
+
+```js
+module.exports = {
+    css: {
+        loaderOptions: {
+            // see doc here http://stylus.github.io/nib/
+            stylus: {
+                use: [require('nib')()],
+                import: ['~nib/lib/nib/index.styl']
+            }
+        }
+    }
+}
+```
+
 ## CentOS 7 的 NodeJS 环境布置
 
 以 node 8x 为例
