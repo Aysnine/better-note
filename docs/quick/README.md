@@ -8,6 +8,34 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## VeryNginx 开启 Gzip
+
+[官方文档](https://github.com/alexazhou/VeryNginx/blob/master/readme_zh.md#%E7%BC%96%E8%BE%91-nginx-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)指明了
+配置文件的位置，将 `/opt/verynginx/openresty/nginx/conf/nginx.conf` 中被注释的 `gzip` 打开即可：
+
+```nginx{3}
+    # ...
+
+    gzip  on;
+
+        #this line shoud be include in every http block
+    include /opt/verynginx/verynginx/nginx_conf/in_http_block.conf;
+
+    server {
+        listen       80;
+
+        #this line shoud be include in every server block
+        include /opt/verynginx/verynginx/nginx_conf/in_server_block.conf;
+
+        location = / {
+            root   html;
+            index  index.html index.htm;
+        }
+    }
+
+    # ...
+```
+
 ## vue-cli3 项目配置 stylus nib
 
 安装依赖：
@@ -18,7 +46,7 @@ yarn add nib
 
 在 `vue.config.js` 文件中加入相关 Loader 配置：
 
-```js
+```js{2-10}
 module.exports = {
     css: {
         loaderOptions: {
@@ -155,7 +183,7 @@ curl -I https://example.com   # 只获取请求/响应头
 
 ## vue-cli3 之 ESlint & Prettier 配置
 
-此为 **package.json**，其它配置文件同理
+将 **package.json** 的 `eslintConfig` 配置成如下即可，其它配置文件同理：
 
 ```json
 {
