@@ -220,7 +220,7 @@ module.exports = HomeController
 
 ![debug](./mock-lose-cookies-dbg/debug1.png)
 
-尽管已经后端已经 set-cookies，但是前端发送的请求里并没有带回执的 Cookies ：
+后端已经声明 `set-cookies`，但前端发送的请求里并没有带回执的 Cookies ：
 
 ![debug](./mock-lose-cookies-dbg/debug2.png)
 
@@ -228,10 +228,10 @@ module.exports = HomeController
 
 ![debug](./mock-lose-cookies-dbg/debug3.png)
 
-这个请求并没有被 MockJS 拦截，但是可以看出它仍然受到 MockJS 影响，这时查阅代码，发现原生 XHR 的 `withCredentials` 被 MockJS 默认为 `false`，
+这个请求并没有被 MockJS 拦截，但仍然受 MockJS 影响，查阅代码，发现原生 XHR 的 `withCredentials` 被 MockJS 默认为 `false`，
 并且在后续操作中被遗忘了，[看这里](https://github.com/nuysoft/Mock/blob/c4d7cba01900b5c5bb8e3d474c8f5d07810ab72e/src/mock/xhr/xhr.js#L257)。
 
-对于未被拦截的请求，MockJS 选择用原生的 XHR 发送出去，
+未被拦截的请求，MockJS 会用原生的 XHR 发送出去，
 相关代码在 `send` 函数中，[看这里](https://github.com/nuysoft/Mock/blob/c4d7cba01900b5c5bb8e3d474c8f5d07810ab72e/src/mock/xhr/xhr.js#L267)，
 就会发现这个原生的 XHR 被藏在 `this.custom.xhr` 这个位置，这时改写一下 `send` 部分的测试代码，分别在 `send` 被调用的前后两阶段检查一下
 这个原生 XHR 的 `withCredentials`：
