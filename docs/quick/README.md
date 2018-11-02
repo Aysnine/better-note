@@ -13,7 +13,7 @@ sidebar: auto
 [官方文档](https://github.com/alexazhou/VeryNginx/blob/master/readme_zh.md#%E7%BC%96%E8%BE%91-nginx-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)指明了
 配置文件的位置，将 `/opt/verynginx/openresty/nginx/conf/nginx.conf` 中被注释的 `gzip` 打开即可：
 
-```nginx{3}
+```nginx {3}
     # ...
 
     gzip  on;
@@ -46,7 +46,7 @@ yarn add nib
 
 在 `vue.config.js` 文件中加入相关 Loader 配置：
 
-```js{2-10}
+```js {2-10}
 module.exports = {
     css: {
         loaderOptions: {
