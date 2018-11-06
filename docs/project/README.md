@@ -52,6 +52,8 @@ sidebar: auto
 
 预览地址：[去看看](http://ojbk.xin/vue-act/)
 
+打包分析：[去看看](http://ojbk.xin/vue-act/report.html)
+
 ## 基于 Vue 的留言板：vue-words
 
 一款原生的 Vue 留言板。
@@ -82,5 +84,3 @@ sidebar: auto
 源码地址：[Github](https://github.com/Aysnine/table-man.git)
 
 预览地址：[去看看](http://ojbk.xin/table-man/)
-
-打包分析：[去看看](http://ojbk.xin/table-man/report.html)
