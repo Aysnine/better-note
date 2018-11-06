@@ -67,7 +67,7 @@ sidebar: auto
 
 预览地址：[去看看](http://ojbk.xin/vue-words/)
 
-## 简单的 Vue 表格组件
+## 简单的 Vue 表格组件：table-man
 
 造轮子系列，一个结合 Vue 编写的数据表格组件。表格组件位于：`src/components/TableMan/index.vue`，可直接复制到你的项目中，并参考 `src/App.vue` 食用 :)
 
