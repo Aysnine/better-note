@@ -31,6 +31,8 @@ sidebar: auto
 
 预览地址：[去看看](http://ojbk.xin/vue-pupil-project/)
 
+打包分析：[去看看](http://ojbk.xin/vue-pupil-project/report.html)
+
 ## 基于 Vue 的社团活动列表：vue-act
 
 原生的社团活动列表，假设社员已经登陆，在此页面查看社团活动，并报名参与。
@@ -80,3 +82,5 @@ sidebar: auto
 源码地址：[Github](https://github.com/Aysnine/table-man.git)
 
 预览地址：[去看看](http://ojbk.xin/table-man/)
+
+打包分析：[去看看](http://ojbk.xin/table-man/report.html)
