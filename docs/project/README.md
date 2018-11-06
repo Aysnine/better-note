@@ -31,6 +31,25 @@ sidebar: auto
 
 预览地址：[去看看](http://ojbk.xin/vue-pupil-project/)
 
+## 基于 Vue 的社团活动列表：vue-act
+
+原生的社团活动列表，假设社员已经登陆，在此页面查看社团活动，并报名参与。
+
+使用 Mock 模拟数据，共三页数据，活动有“报名中、活动中、已结束”三种状态，针对每个活动，社员有报名参与和未参与两种状态。
+
+### Features
+
+- 使用 vue-cli3 构建
+- 基于 vue2x
+- 包含 pug、stylus
+- 适配移动端
+- Mock 模拟数据增强版
+- 自带 XSS 防护，浏览内容安全可靠
+- 异步请求日志可视化（含 Mock 请求）
+- 使用 epic-spinner 加载动画效果
+
+预览地址：[去看看](http://ojbk.xin/vue-act/)
+
 ## 基于 Vue 的留言板：vue-words
 
 一款原生的 Vue 留言板。
