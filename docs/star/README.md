@@ -27,6 +27,7 @@ sidebar: auto
 - [Gogs 自建 Git 服务器](https://gogs.io/)
 - [Frp 内网穿透](https://github.com/fatedier/frp)
 - [Abstruse CI 持续集成](https://github.com/bleenco/abstruse)
+- [VeryNginx 懒人 Web 管理](https://github.com/alexazhou/VeryNginx/blob/master/readme_zh.md)
 
 ## ☢️ Chrome 技能
 
