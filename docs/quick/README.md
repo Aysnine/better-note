@@ -8,6 +8,14 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## vue-cli3 项目中添加 pug 支持
+
+在项目中安装 `pug`、`pug-plain-loader` 依赖即可
+
+```bash
+yarn add pug pug-plain-loader -D
+```
+
 ## VeryNginx 开启 Gzip
 
 [官方文档](https://github.com/alexazhou/VeryNginx/blob/master/readme_zh.md#%E7%BC%96%E8%BE%91-nginx-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)指明了
