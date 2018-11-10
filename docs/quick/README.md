@@ -8,7 +8,16 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
-## 新版本的 vue-cli 创建项目对 pug 的不友好
+## 安装 Docker 可视化 Web 工具：Portainer
+
+```bash
+$ docker volume create portainer_data
+$ docker run -d -p 80:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+```
+
+[参考文档](https://portainer.readthedocs.io/en/latest/deployment.html#quick-start)
+
+## vue 项目的 lint 误报 pug 语法错误
 
 对 template 进行 lint，如果用 pug 写，会出现辣鸡的 lint 警告，
 千万别 fix，暂时先忽略对 template 的 lint 吧。
