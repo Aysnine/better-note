@@ -8,6 +8,33 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## 新版本的 vue-cli 创建项目对 pug 的不友好
+
+对 template 进行 lint，如果用 pug 写，会出现辣鸡的 lint 警告，
+千万别 fix，暂时先忽略对 template 的 lint 吧。
+
+如 `App.vue`：
+
+```vue {1}
+<!-- prettier-ignore -->
+<template lang="pug">
+  #app
+    img(alt='Vue logo', src='./assets/logo.png')
+    hello-world(msg='Welcome to Your Vue.js App')
+</template>
+
+<script>
+import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'app',
+  components: {
+    HelloWorld
+  }
+}
+</script>
+```
+
 ## vue-cli3 项目中添加 pug 支持
 
 在项目中安装 `pug`、`pug-plain-loader` 依赖即可
