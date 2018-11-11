@@ -8,6 +8,22 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## 便于调试正则表达式的小型测试代码
+
+```js
+(function (r){
+	[
+        // [正确结果, 测试用的字符串]
+		[false, '123,'],
+		[true, '123.1'],
+		[true, '0.4,0.5,0.66']
+        // ... 添加测试项
+	].map(i => { // 使用正则对象的 test 方法测试
+		console.log(r.test(i[1])===i[0] ? '✔️':'❌', i[0], i[1])
+	})
+})( /^(\d+(\.\d+)?)(\,\d+(\.\d+)?)*$/ ) // 编辑正则
+```
+
 ## 安装 Docker 可视化 Web 工具：Portainer
 
 ```bash
@@ -17,7 +33,7 @@ $ docker run -d -p 80:9000 --name portainer --restart always -v /var/run/docker.
 
 [参考文档](https://portainer.readthedocs.io/en/latest/deployment.html#quick-start)
 
-## vue 项目的 lint 误报 pug 语法错误
+## ~~vue 项目的 lint 误报 pug 语法错误~~
 
 对 template 进行 lint，如果用 pug 写，会出现辣鸡的 lint 警告，
 千万别 fix，暂时先忽略对 template 的 lint 吧。
@@ -42,6 +58,9 @@ export default {
   }
 }
 </script>
+
+这个问题是 Prettier 的锅，已经修好了，忽略不支持的语言：[prettier/prettier#5388](https://github.com/prettier/prettier/pull/5388)
+
 ```
 
 ## vue-cli3 项目中添加 pug 支持
