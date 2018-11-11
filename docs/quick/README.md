@@ -40,7 +40,9 @@ $ docker run --name portainer \
 
 [参考文档](https://portainer.readthedocs.io/en/latest/deployment.html#quick-start)
 
-## ~~vue 项目的 lint 误报 pug 语法错误~~
+## vue 项目的 lint 误报 pug 语法错误
+
+**这个问题是 Prettier 的锅**，已经修好了，忽略不支持的语言：[prettier/prettier#5388](https://github.com/prettier/prettier/pull/5388)
 
 对 template 进行 lint，如果用 pug 写，会出现辣鸡的 lint 警告，
 千万别 fix，暂时先忽略对 template 的 lint 吧。
@@ -66,8 +68,6 @@ export default {
 }
 </script>
 ```
-
-**这个问题是 Prettier 的锅**，已经修好了，忽略不支持的语言：[prettier/prettier#5388](https://github.com/prettier/prettier/pull/5388)
 
 ## vue-cli3 项目中添加 pug 支持
 
