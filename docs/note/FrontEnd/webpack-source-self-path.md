@@ -2,7 +2,7 @@
 
 基于 Webpack 构建的项目中，如何在 `.vue`、`.js` 等源码文件中，获取到其自身的源码文件路径？
 
-通常在编写用 NodeJS 运行的代码时，可以通过 `__filename`、`__dirname` 等变量，获取到当前源码的路径信息。而在 Webpack 的眼中，每个 `.js`、`.ts`、`.vue` 的源码文件可以看作一个 js 模块，那有 `__filename`、`__dirname` 这种东西用吗？
+通常在编写用 NodeJS 运行的代码时，可以通过 `__filename`、`__dirname` 等变量，获取到当前源码的路径信息。而在 Webpack 的眼中，每个 `.js`、`.ts`、`.vue` 的源码文件可以看作一个 js 模块，那仍然有 `__filename`、`__dirname` 这种东西吗？
 
 在源码中试一试，如：`src/pages/hello.vue`
 ```vue
