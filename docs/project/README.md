@@ -33,6 +33,18 @@ sidebar: auto
 
 打包分析：[去看看](http://ojbk.xin/vue-pupil-project/report.html)
 
+## 麻瓜影评：vue-magua-movie
+
+还在做的一个项目（真的还没写完），类似于豆瓣，主要是 Bootstrap-Vue 组件来构建前端 
+
+- 使用 vue-cli3 构建
+- 基于 vue2x
+- 包含 pug、stylus
+
+预览地址：[去看看](http://ojbk.xin/vue-magua-movie/)
+
+打包分析：[去看看](http://ojbk.xin/vue-magua-movie/report.html)
+
 ## 基于 Vue 的社团活动列表：vue-act
 
 原生的社团活动列表，假设社员已经登陆，在此页面查看社团活动，并报名参与。
