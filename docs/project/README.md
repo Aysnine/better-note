@@ -62,6 +62,8 @@ sidebar: auto
 - 异步请求日志可视化（含 Mock 请求）
 - 使用 epic-spinner 加载动画效果
 
+源码地址：[Github](https://github.com/Aysnine/vue-magua-movie.git)
+
 预览地址：[去看看](http://ojbk.xin/vue-act/)
 
 打包分析：[去看看](http://ojbk.xin/vue-act/report.html)
