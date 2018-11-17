@@ -8,9 +8,9 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
-## 解决 bootstrap-vue 组件图片资源引用问题
+## bootstrap-vue 组件图片资源引用问题
 
-使用 bootstrap-vue 的图片相关的组件，不像普通的 `<img src="@/assets/logo.png">` 使用智能的路径去引用资源，
+使用 bootstrap-vue 的图片相关组件，不像普通的 `<img src="@/assets/logo.png">`，能智能引用资源，
 所以要在 loader 配置加选项。
 
 在官方找到了解决方法：[bootstrap-vue/bootstrap-vue#1982](https://github.com/bootstrap-vue/bootstrap-vue/issues/1982#issuecomment-410534278)，
