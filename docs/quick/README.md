@@ -16,7 +16,7 @@ sidebar: auto
 在官方找到了解决方法：[bootstrap-vue/bootstrap-vue#1982](https://github.com/bootstrap-vue/bootstrap-vue/issues/1982#issuecomment-410534278)，
 以下是 vue-cli3 的配置方式： `/vue.config.js` ：
 
-```js {3,20}
+```js {3-20}
 module.exports = {
     chainWebpack: config => {
         /* for bootstrap-vue */
