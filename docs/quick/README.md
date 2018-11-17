@@ -8,6 +8,39 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## 解决 bootstrap-vue 组件图片资源引用问题
+
+使用 bootstrap-vue 的图片相关的组件，不像普通的 `<img src="@/assets/logo.png">` 使用智能的路径去引用资源，
+所以要在 loader 配置加选项。
+
+在官方找到了解决方法：[bootstrap-vue/bootstrap-vue#1982](https://github.com/bootstrap-vue/bootstrap-vue/issues/1982#issuecomment-410534278)，
+以下是 vue-cli3 的配置方式： `/vue.config.js` ：
+
+```js {3,20}
+module.exports = {
+    chainWebpack: config => {
+        /* for bootstrap-vue */
+        config.module
+        .rule('vue')
+        .use('vue-loader')
+        .loader('vue-loader')
+        .tap(options => {
+            options['transformAssetUrls'] = {
+                img: 'src',
+                image: 'xlink:href',
+                'b-img': 'src',
+                'b-img-lazy': ['src', 'blank-src'],
+                'b-card': 'img-src',
+                'b-card-img': 'img-src',
+                'b-carousel-slide': 'img-src',
+                'b-embed': 'src'
+            }
+            return options
+        })
+    }
+}
+```
+
 ## 调试正则的小型 js 测试框架代码
 
 每次调试正则，都是个繁杂的过程，这里提供一个测试代码，将要测试的字符串和期待的结果，成对填入数组，
