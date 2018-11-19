@@ -41,6 +41,8 @@ sidebar: auto
 
 还在做的一个项目（真的还没写完），类似于豆瓣，主要是 Bootstrap-Vue 组件来构建前端 
 
+### Features
+
 - 使用 vue-cli3 构建
 - 基于 vue2x
 - 包含 pug、stylus
