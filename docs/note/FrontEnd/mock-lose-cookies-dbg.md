@@ -42,10 +42,10 @@ Mock.XHR.prototype.send = function () {
 
 ## 分析调试
 
-MockJS 是何如拦截 XHR 异步请求的？
+MockJS 是如何拦截 XHR 异步请求的？
 
-发送异步请求，是通过 `new XMLHttpRequest` 创建了一个请求对象。
-MockJS 通过重写 XHR，定制了一个可以不用发送真实请求，返回自定义数据的 XHR 对象。
+在浏览器中发送异步请求，是通过 `new XMLHttpRequest` 创建了一个请求对象。
+MockJS 通过重写这个全局的 XHR 对象，定制了一个可以不用发送真实请求，返回自定义数据的 XHR 对象。
 在[代码注释中](https://github.com/nuysoft/Mock/blob/c4d7cba01900b5c5bb8e3d474c8f5d07810ab72e/src/mock/xhr/xhr.js#L31)说明了为什么要重写：
 
 > 关键属性 readyState、status、statusText、response、responseText、responseXML 是 readonly，所以，试图通过修改这些状态，来模拟响应是不可行的。
