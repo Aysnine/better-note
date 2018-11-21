@@ -8,7 +8,7 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
-## axios post 向 SpringBoot 传递表单数组的问题
+## axios 向 SpringBoot 传递表单数组
 
 前端：
 
