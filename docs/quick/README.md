@@ -8,6 +8,39 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## axios post 向 SpringBoot 传递表单数组的问题
+
+前端：
+
+```js {9}
+import qs from 'qs'
+import qxios from 'axios'
+
+axios
+    .post(
+        '/api', 
+        qs.stringify(
+            { list: [1, 2, 3] },
+            { arrayFormat: 'repeat' } // ! 主要是用 qs 格式化表单数据，数组要设置成 repeat 格式
+        ) // => 'list=1&list=2&list=3'
+    )
+```
+
+后端：
+
+```java {6}
+@RestController
+public class CommentController {
+
+    @RequestMapping("/api")
+    public void api(
+        @Param("list[]") Integer[] list // 这样写注解，来接收数组
+    ) {
+        // ...
+    }
+}
+```
+
 ## bootstrap-vue 组件图片资源引用问题
 
 使用 bootstrap-vue 的图片相关组件，不像普通的 `<img src="@/assets/logo.png">`，能智能引用资源，
