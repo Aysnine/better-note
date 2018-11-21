@@ -39,13 +39,18 @@ sidebar: auto
 
 ## 麻瓜影评：vue-magua-movie
 
-还在做的一个项目（真的还没写完），类似于豆瓣，主要是 Bootstrap-Vue 组件来构建前端 
+类似于豆瓣，主要是 Bootstrap-Vue 组件来构建前端，后端小伙伴用 SpringBoot，这里放的是预览版本，纯前端。
+
+系统角色分为会员的管理员，会员有自己的个人信息页面，可以在各影片下发表评论，管理员可以管理影片、查看所有会员、管理影评，有些细节有时间再完善，基本功能的编写大概花了一周。
 
 ### Features
 
 - 使用 vue-cli3 构建
 - 基于 vue2x
 - 包含 pug、stylus
+- Mock 模拟数据增强版，无需后端，也可以体验真实的数据演示
+
+源码地址：[Github](https://github.com/Aysnine/vue-magua-movie.git)
 
 预览地址：[去看看](http://ojbk.xin/vue-magua-movie/)
 
@@ -67,8 +72,6 @@ sidebar: auto
 - 自带 XSS 防护，浏览内容安全可靠
 - 异步请求日志可视化（含 Mock 请求）
 - 使用 epic-spinner 加载动画效果
-
-源码地址：[Github](https://github.com/Aysnine/vue-magua-movie.git)
 
 预览地址：[去看看](http://ojbk.xin/vue-act/)
 
