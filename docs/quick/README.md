@@ -8,6 +8,30 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## MySQL 获取常见日期
+
+```
+SELECT
+
+	# 今天的日期
+	CURDATE() AS '今天的日期',
+	
+	# 本月第一天
+	DATE_ADD(CURDATE(), INTERVAL - DAY (CURDATE()) + 1 DAY) AS '本月第一天',
+	
+	# 本季度第一天(农历)
+	DATE(CONCAT(YEAR(CURDATE( ) ),'-',(
+		IF(FLOOR( MONTH ( CURDATE( ) ) / 3 ) > 0, FLOOR( MONTH ( CURDATE( ) ) / 3 ), 4)*3
+	) + '','-','1')) AS '本季度第一天(农历)',
+	
+	# 本季度第一天(数学)
+	DATE(CONCAT(YEAR(CURDATE()), '-', (FLOOR(MONTH(CURDATE())/3)*3+1), '-', '1' )) AS '本季度第一天(数学)',
+	
+	# 本年第一天
+	DATE_SUB(CURDATE(), INTERVAL DAYOFYEAR (NOW()) - 1 DAY) AS '本年第一天'
+;
+```
+
 ## axios 向 SpringBoot 传递表单数组
 
 前端：
