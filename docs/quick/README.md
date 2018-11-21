@@ -10,7 +10,7 @@ sidebar: auto
 
 ## MySQL 获取常见日期
 
-```
+``` sql
 SELECT
 
 	# 今天的日期
