@@ -24,6 +24,8 @@ choco install php composer -y
 
 ## vue-cli3 项目配置跨域代理
 
+这里是利用开发时自带的 devServer 进行跨域代理，环境生产中请自行配置后端代理，如 Nginx 反向代理之类的。
+
 `vue.config.js`：
 
 ``` js {4-11}
@@ -153,7 +155,7 @@ module.exports = {
 })( /^(\d+(\.\d+)?)(\,\d+(\.\d+)?)*$/ ) // 编辑正则
 ```
 
-## 在 Web 上操作 Docker：安装 Portainer
+## Docker Web 可视化：Portainer
 
 ```bash
 $ docker volume create portainer_data
