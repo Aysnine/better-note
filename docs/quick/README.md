@@ -139,7 +139,7 @@ module.exports = {
 })( /^(\d+(\.\d+)?)(\,\d+(\.\d+)?)*$/ ) // 编辑正则
 ```
 
-## 在 Web 上操作 Docker：安装 Portainer
+## Docker Web 可视化：Portainer
 
 ```bash
 $ docker volume create portainer_data
