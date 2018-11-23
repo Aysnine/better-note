@@ -10,13 +10,15 @@ sidebar: auto
 
 ## vue-cli3 项目配置跨域代理
 
-``` js
+`vue.config.js`：
+
+``` js {4-11}
 module.exports = {
     devServer: {
-        /*
-            '/cors/zhihu/xxx' => 'https://www.zhihu.com/xxx'
-        */
         proxy: {
+            /*
+                '/cors/zhihu/xxx' => 'https://www.zhihu.com/xxx'
+            */
             '/cors/zhihu': {
                 target: 'https://www.zhihu.com',
                 changeOrigin: true,
