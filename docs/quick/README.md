@@ -10,6 +10,8 @@ sidebar: auto
 
 ## vue-cli3 项目配置跨域代理
 
+这里是利用开发时自带的 devServer 进行跨域代理，环境生产中请自行配置后端代理，如 Nginx 反向代理之类的。
+
 `vue.config.js`：
 
 ``` js {4-11}
