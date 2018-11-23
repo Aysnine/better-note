@@ -8,6 +8,25 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## vue-cli3 项目配置跨域代理
+
+``` js
+module.exports = {
+    devServer: {
+        /*
+            '/cors/zhihu/xxx' => 'https://www.zhihu.com/xxx'
+        */
+        proxy: {
+            '/cors/zhihu': {
+                target: 'https://www.zhihu.com',
+                changeOrigin: true,
+                pathRewrite: { '^/cors/zhihu': '' }
+            }
+        }
+    }
+}
+```
+
 ## MySQL 获取常见日期
 
 ``` sql
