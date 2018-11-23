@@ -8,6 +8,20 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## choco 快速安装 php、composer
+
+在 windows 上开发 php，如果自己去下载，手动安装，挺麻烦的，
+windows 下有 [Chocolatey](https://chocolatey.org/) 这种包管理器，
+和其他语言的包管理器神似。
+
+打开 powershell，运行以下命令，默认安装较新的 php、composer：
+
+``` shell
+choco install php composer -y
+```
+
+对了，[Composer](https://github.com/composer/composer) 是 php 的包管理器。
+
 ## vue-cli3 项目配置跨域代理
 
 `vue.config.js`：
