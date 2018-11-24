@@ -8,6 +8,33 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## composer repo 加速下载
+
+类似于 npm 在国内有淘宝撑着，让国内的开发者能快速安装依赖，composer 也需要根据国情来配置相应的加速源。
+
+以下命令全局修改 repo (npm 里叫 registry，composer 的叫 repo，emmm......) ，选其一即可:
+
+``` bash
+# phpcomposer
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
+
+# laravel 中国提供
+composer config -g repo.packagist composer https://packagist.laravel-china.org
+```
+
+嫌麻烦还可以用 crm (类似于 npm 中的 [nrm](https://github.com/Pana/nrm), emmm......) 切换源:
+
+``` bash
+# 全局安装 crm，建议先运行上面的修改源的命令，因为这里涉及包下载，很慢
+composer global require slince/composer-registry-manager
+
+# 查看内置源
+composer repo:ls
+
+# 切换源，输入数字确认
+composer repo:use
+```
+
 ## choco 快速安装 php、composer
 
 在 windows 上开发 php，如果自己去下载，手动安装，挺麻烦的，
