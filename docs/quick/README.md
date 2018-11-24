@@ -8,6 +8,24 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## Laravel 配置基础扩展
+
+初入手遇到一下错误：
+
+> the requested PHP extension fileinfo is missing from your system.
+> 
+> $ php --ini
+> Configuration File (php.ini) Path: C:\WINDOWS
+> Loaded Configuration File:         C:\tools\php72\php.ini
+> Scan for additional .ini files in: (none)
+> Additional .ini files parsed:      (none)
+
+在 php.ini 末尾添加相关扩展，解决问题：
+
+``` ini
+extension=php_fileinfo.dll
+```
+
 ## composer repo 加速下载
 
 类似于 npm 在国内有淘宝撑着，让国内的开发者能快速安装依赖，composer 也需要根据国情来配置相应的加速源。
