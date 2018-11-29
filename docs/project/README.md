@@ -56,6 +56,12 @@ sidebar: auto
 
 打包分析：[去看看](http://ojbk.xin/vue-magua-movie/report.html)
 
+## Ecoio 智能设备管理系统(alpha)
+
+这是使用 vue-element-admin 集成方案做的试水项目，后端配备 eggjs，这里放置预览版本，启动稍慢，有时间会进行重构。
+
+预览地址：[去看看](http://xrox.me:1330/)
+
 ## 基于 Vue 的社团活动列表：vue-act
 
 原生的社团活动列表，假设社员已经登陆，在此页面查看社团活动，并报名参与。
