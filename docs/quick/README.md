@@ -10,7 +10,7 @@ sidebar: auto
 
 ## Laravel 配置基础扩展
 
-初入手遇到一下错误：
+初入手遇到如下错误：
 
 > the requested PHP extension fileinfo is missing from your system.
 > 
