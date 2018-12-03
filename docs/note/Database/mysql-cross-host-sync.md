@@ -3,14 +3,14 @@
 > 两个不同主机上的 MySQL，进行单向的数据同步，对实时性要求不高的情况下，
 > 最简单的方式是使用 MySQL 自带的 `mysqldump`、`mysql` 命令，本文仅在 MySQL 5.7 测试过。
 
-*以下命令在 linux 环境下使用，并且包含明文密码，所以会出现以下警告，这里暂时忽略这个问题：*
+*本文中的命令在 linux 环境下使用，并且包含明文密码，所以会出现以下警告，这里暂时忽略这个问题：*
 
 ```
 mysql: [Warning] Using a password on the command line interface can be insecure.
 mysqldump: [Warning] Using a password on the command line interface can be insecure.
 ```
 
-## 同步一个数据库
+## 同步数据库
 
 ``` bash
 mysqldump -h [源host] -u [源user] -P [源port] --password=[源用户密码] \
@@ -18,7 +18,7 @@ mysqldump -h [源host] -u [源user] -P [源port] --password=[源用户密码] \
 		| mysql -h [目标host] -u [目标user] -P [目标port] --password=[目标用户密码] -C [目标数据库名]
 ```
 
-## 只同步几张表
+## 只同步表
 
 ``` bash {2}
 mysqldump -h [源host] -u [源user] -P [源port] --password=[源用户密码] \
