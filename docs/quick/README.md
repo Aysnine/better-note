@@ -362,19 +362,32 @@ MySQL 5.7
 
 ```bash
 docker run \
-    --name mysql57_mine \ # * 容器实例别名
-    -e MYSQL_ROOT_PASSWORD=mine2018 \ # * root 密码
-    -e MYSQL_DATABASE=mine2018 \ # * 默认创建的库
-    -e MYSQL_USER=mine2018 \ # 默认创建的用户
-    -e MYSQL_PASSWORD=mine2018 \ # 默认创建的用户的密码
-    --restart=always \ # * 总是跟随 docker 自启
-    -p 3306:3306 \ # * 端口映射，本机端口:容器端口
-    -d \ # 后台运行
-    mysql:5.7 \ # 常用版本
-    --lower_case_table_names \ # 使用全小写表名，避免 linux 服务器上区分大小写
-    --character-set-server=utf8mb4 \ # 默认字符集
-    --collation-server=utf8mb4_unicode_ci # 默认字符集
+	--name mysql57_mine \
+	-e MYSQL_ROOT_PASSWORD=mine2018 \
+	-e MYSQL_DATABASE=mine2018 \
+	-e MYSQL_USER=mine2018 \
+	-e MYSQL_PASSWORD=mine2018 \
+	--restart=always \
+	-p 3306:3306 \
+	-d \
+	mysql:5.7 \
+	--lower_case_table_names \
+	--character-set-server=utf8mb4 \
+	--collation-server=utf8mb4_unicode_ci 
 ```
+
+- `--name mysql57_mine` 容器实例别名
+- `-e MYSQL_ROOT_PASSWORD=mine2018` * root 密码
+- `-e MYSQL_DATABASE=mine2018` * 默认创建的库
+- `-e MYSQL_USER=mine2018` 默认创建的用户
+- `-e MYSQL_PASSWORD=mine2018` 默认创建的用户的密码
+- `--restart=always` * 总是跟随 docker 自启
+- `-p 3306:3306` * 端口映射，本机端口:容器端口
+- `-d` 后台运行
+- `mysql:5.7` 常用版本
+- `--lower_case_table_names` 使用全小写表名，避免 linux 服务器上区分大小写
+- `--character-set-server=utf8mb4` 默认字符集
+- `--collation-server=utf8mb4_unicode_ci` 默认字符集
 
 ## CentOS 7 安装最新版 FFmpeg
 
