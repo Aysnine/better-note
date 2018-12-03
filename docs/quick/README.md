@@ -120,7 +120,7 @@ SELECT
 
 ```js {9}
 import qs from 'qs'
-import qxios from 'axios'
+import axios from 'axios'
 
 axios
     .post(
