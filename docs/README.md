@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /me.png
+heroImage: /me-rev.png
 actionLink: /note/JavaScript/
 footer: '{ "email": "cnine229@qq.com", "qq": "2290384229" }'
 ---
