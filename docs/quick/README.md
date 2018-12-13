@@ -136,7 +136,7 @@ axios
 
 ```java {6}
 @RestController
-public class CommentController {
+public class ApiController {
 
     @RequestMapping("/api")
     public void api(
