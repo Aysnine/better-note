@@ -8,10 +8,11 @@ sidebar: auto
 
 - [D2 前端资源库](https://awesome.fairyever.com/)
 - [Awesomes-Web前端开发资源库](https://www.awesomes.cn/)
-- [vuejs/awesome-vue](https://github.com/vuejs/awesome-vue)
-- [Awesome Go](https://awesome-go.com/)
-- [Awesome Python](https://awesome-python.com/)
-- [ligurio/awesome-ci](https://github.com/ligurio/awesome-ci/blob/master/README.md)
+- VUE：[vuejs/awesome-vue](https://github.com/vuejs/awesome-vue)
+- GO：[Awesome Go](https://awesome-go.com/)
+- Python：[Awesome Python](https://awesome-python.com/)
+- CI：[ligurio/awesome-ci](https://github.com/ligurio/awesome-ci/blob/master/README.md)
+- ETL：[pawl/awesome-etl](https://github.com/pawl/awesome-etl)
 
 ## 🧐 我想知道
 
