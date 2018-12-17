@@ -23,6 +23,11 @@ sidebar: auto
 - [编程语言排名哪家强？](https://www.tiobe.com/tiobe-index/)
 - [Github 用户编程语言哪家强？](https://www.benfrederickson.com/ranking-programming-languages-by-github-users/)
 
+## 🛸 AutomaticApi、RestAPI
+
+- [Postgrest：针对 PostgreSQL 数据库建立 RestApi 服务](https://postgrest.org/zh/latest/)
+- [Xmysql：针对 MySQL 数据库建立 RestApi 服务](https://github.com/o1lab/xmysql)
+
 ## ⚙️ 自建服务系列
 
 - [Gogs 自建 Git 服务器](https://gogs.io/)
