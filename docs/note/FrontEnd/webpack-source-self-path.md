@@ -29,3 +29,5 @@ node: {
 ```
 
 这样一来，`__filename`、`__dirname` 就能正常使用了，但由于各种 Webpack 集成化环境的配置方式有所不同，还需根据自己项目的情况进行以上配置。
+
+<PrettyComment />

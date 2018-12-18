@@ -8,3 +8,5 @@
 <BuddyLogo who="Puppeteer" />
 
 <CateList />
+
+<PrettyComment />

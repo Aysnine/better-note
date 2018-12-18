@@ -8,3 +8,5 @@
 <BuddyLogo who="Raspberry-Pi" />
 
 <CateList />
+
+<PrettyComment />

@@ -22,3 +22,5 @@
 <BuddyLogo who="Layui" />
 
 <CateList />
+
+<PrettyComment />

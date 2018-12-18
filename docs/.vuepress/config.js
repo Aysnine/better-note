@@ -1,7 +1,7 @@
 const path = require('path');
 const ls = require('ls');
 
-let nav = [
+const nav = [
   {
     text: '📗 笔记',
     items: [
@@ -26,6 +26,11 @@ let nav = [
   }
 ];
 
+const head = [
+  ['script', { src: '/static/av-min.js' }],
+  ['script', { src: '/static/valine.min.js' }]
+]
+
 // 文件排序，默认显示最新，README在最前
 function sortFile(files) {
   // console.log(files.map(i => i.path))
@@ -38,6 +43,7 @@ function sortFile(files) {
 }
 
 module.exports = {
+  head,
   base: "/",
   locales: {
     '/': {

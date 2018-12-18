@@ -292,3 +292,5 @@ Cookies 已经有了：
 ![debug](./mock-lose-cookies-dbg/debug6.png)
 
 问题告一段落，MockJS 可能还会引发其他一些问题，在以后的实践中有待学习。
+
+<PrettyComment />

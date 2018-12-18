@@ -86,3 +86,5 @@ SELECT * FROM state_heater_online;
 
 PipelineDB 的思想，就是先定义好数据的入口，也就是创建流，然后基于流，把统计的 SQL 语句创建成 CONTINUOUS VIEW。
 当有数据插入流，PipelineDB 会去更新相关的 CONTINUOUS VIEW，所用时间几乎是恒定的，毫秒级别，因为统计已经在数据插入的时候完成了合并计算。
+
+<PrettyComment />

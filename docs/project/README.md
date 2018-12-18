@@ -125,3 +125,5 @@ sidebar: auto
 预览地址：[去看看](http://ojbk.xin/table-man/)
 
 源码地址：[Github](https://github.com/Aysnine/table-man.git)
+
+<PrettyComment />

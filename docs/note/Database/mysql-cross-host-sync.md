@@ -59,3 +59,5 @@ echo 'Run at' `date +"%Y-%m-%d %H:%M:%S"`
 ## 参考
 
 - [mysql sync two tables from 2 databases - Stack Overflow](https://stackoverflow.com/questions/12404634/mysql-sync-two-tables-from-2-databases)
+
+<PrettyComment />

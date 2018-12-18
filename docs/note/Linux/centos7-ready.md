@@ -203,3 +203,5 @@ yum remove docker \
 			docker-selinux \ 
 			docker-engine 
 ```
+
+<PrettyComment />

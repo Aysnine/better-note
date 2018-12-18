@@ -7,3 +7,5 @@
 <BuddyLogo who="Lowdb" />
 
 <CateList />
+
+<PrettyComment />

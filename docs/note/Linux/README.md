@@ -11,3 +11,5 @@
 <BuddyLogo who="Gogs" />
 
 <CateList />
+
+<PrettyComment />
