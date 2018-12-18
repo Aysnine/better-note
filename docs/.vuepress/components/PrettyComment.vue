@@ -9,15 +9,17 @@
         </span>
       </div>
     </div>
-    <div id="vcomments"></div>
+    <div ref="vcomments"></div>
   </div>
 </template>
 
 <script>
 export default {
   mounted() {
+    let id = `vcomments${+new Date()}`
+    this.$refs.vcomments.id = id
     new Valine({
-      el: '#vcomments',
+      el: '#'+id,
       appId: 'IaM9lSdwBvjoe7j7vPUzKDaj-gzGzoHsz',
       appKey: '9QtvqVJg3ys5nuQarbyb7LhF',
       placeholder: '这里是留言评论区，欢迎讨论 :)',
