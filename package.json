@@ -28,7 +28,6 @@
     "ls": "^0.2.1",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
-    "vuepress": "^0.10.2",
-    "vuepress-theme-ajv": "^1.0.2"
+    "vuepress": "^0.14.8"
   }
 }
