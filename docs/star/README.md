@@ -22,6 +22,7 @@ sidebar: auto
 - [数据库排名哪家强？](https://db-engines.com/en/ranking)
 - [编程语言排名哪家强？](https://www.tiobe.com/tiobe-index/)
 - [Github 用户编程语言哪家强？](https://www.benfrederickson.com/ranking-programming-languages-by-github-users/)
+- [开源协议咋选？](https://choosealicense.com/)
 
 ## 🛸 AutomaticApi、RestAPI
 
