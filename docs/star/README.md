@@ -43,5 +43,7 @@ sidebar: auto
 ## 🔫 工具箱
 
 - [Dive ：看看 Docker 镜像 layer 里都有啥](https://github.com/wagoodman/dive)
+- [ctop ：命令行下的简单 Docker 容器管理](https://ctop.sh/)
+- [gtop ：比 htop 酷炫一点点，用 node 打造](https://github.com/aksakalli/gtop)
 
 <PrettyComment />
