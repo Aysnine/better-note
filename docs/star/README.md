@@ -46,4 +46,8 @@ sidebar: auto
 - [ctop ：命令行下的简单 Docker 容器管理](https://ctop.sh/)
 - [gtop ：比 htop 酷炫一点点，用 node 打造](https://github.com/aksakalli/gtop)
 
+## 🀄️ 国内开发时有用的东西
+
+- [一组匹配中国大陆手机号码的正则表达式](https://github.com/VincentSit/ChinaMobilePhoneNumberRegex)
+
 <PrettyComment />
