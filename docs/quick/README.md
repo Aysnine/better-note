@@ -8,6 +8,38 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## zsh 报错： compaudit
+
+最近登陆 CentOS7 的 root 用户，因为装了 zsh + antigen，报错：
+
+> zsh compinit: insecure directories, run compaudit for list.
+> Ignore insecure directories and continue [y] or abort compinit [n]? ncompinit: initialization aborted
+
+其实是因为可执行文件权限受阻，根据命令提示，在用户的 home 目录使用  `compaudit` 命令，就可以查看哪些目录权限有问题：
+
+```
+~ # compaudit
+There are insecure directories:
+/root/.antigen/bundles/robbyrussell/oh-my-zsh/lib
+/root/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git
+/root/.antigen/bundles/zsh-users/zsh-syntax-highlighting
+/root/.antigen/bundles/zsh-users/zsh-autosuggestions
+/root/.antigen/bundles/zsh-users/zsh-completions
+/root/.antigen/bundles/zsh-users/zsh-completions/src
+/root/.antigen/bundles/robbyrussell/oh-my-zsh
+/root/.antigen/bundles/robbyrussell/oh-my-zsh/plugins
+/root/.antigen/bundles/zsh-users
+/root/.antigen/bundles/zsh-users
+/root/.antigen/bundles/zsh-users
+/root/.antigen/bundles/zsh-users/zsh-completions
+```
+
+因为使用的 antigen，所有 `.antigen` 目录下的文件权限都有问题，接下来改权限：
+
+``` bash
+chmod -R 755 ~/.antigen/*
+```
+
 ## Laravel 配置基础扩展
 
 初入手遇到如下错误：
