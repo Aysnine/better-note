@@ -8,6 +8,24 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## knex 连接 oracle 的问题
+
+[knex](https://knexjs.org) 可以用于 nodejs 后端开发，连接各种主流数据库，并进行增删改查操作，链式语法。
+但是[官方文档](https://knexjs.org/#Installation-client)并没有提供连接 oracle 的例子，除了 [node-oracledb 安装文档](https://oracle.github.io/node-oracledb/INSTALL.html#quickstart) 所需的宿主机环境依赖，还需要特殊的连接配置，
+在 [oracle/node-oracledb](https://github.com/oracle/node-oracledb) 的 [api文档](https://oracle.github.io/node-oracledb/doc/api.html) 里有相关配置示例，
+其中 connection 对象如下：
+
+``` js
+{
+    user          : "hr",
+    password      : "welcome",
+    connectString : "localhost/XEPDB1" // host[:port]/DB
+}
+```
+
+不同于其他数据库的 connection 对象，oracle 的只有 `user`、`password`、`connectString`，
+一定要注意 `connectString` 末尾的大小写。
+
 ## zsh 报错： compaudit
 
 最近登陆 CentOS7 的 root 用户，因为装了 zsh + antigen，报错：
