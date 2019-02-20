@@ -33,11 +33,11 @@ sidebar: auto
 - Excel 导入导出
 - Zip 导出
 
-预览地址：[去看看](http://ojbk.xin/vue-pupil-project/)
+预览地址：[去看看](https://ojbk.xin/vue-pupil-project/)
 
 源码地址：[Github](https://github.com/Aysnine/vue-pupil-project.git)
 
-打包分析：[去看看](http://ojbk.xin/vue-pupil-project/report.html)
+打包分析：[去看看](https://ojbk.xin/vue-pupil-project/report.html)
 
 ## 麻瓜影评：vue-magua-movie
 
@@ -54,11 +54,11 @@ sidebar: auto
 - 包含 pug、stylus
 - Mock 模拟数据增强版，无需后端，也可以体验真实的数据演示
 
-预览地址：[去看看](http://ojbk.xin/vue-magua-movie/)
+预览地址：[去看看](https://ojbk.xin/vue-magua-movie/)
 
 源码地址：[Github](https://github.com/Aysnine/vue-magua-movie.git)
 
-打包分析：[去看看](http://ojbk.xin/vue-magua-movie/report.html)
+打包分析：[去看看](https://ojbk.xin/vue-magua-movie/report.html)
 
 ## Ecoio 智能设备管理系统(alpha)
 
@@ -87,9 +87,9 @@ sidebar: auto
 - 异步请求日志可视化（含 Mock 请求）
 - 使用 epic-spinner 加载动画效果
 
-预览地址：[去看看](http://ojbk.xin/vue-act/)
+预览地址：[去看看](https://ojbk.xin/vue-act/)
 
-打包分析：[去看看](http://ojbk.xin/vue-act/report.html)
+打包分析：[去看看](https://ojbk.xin/vue-act/report.html)
 
 ## 基于 Vue 的留言板：vue-words
 
@@ -108,7 +108,7 @@ sidebar: auto
 - 自带 XSS 防护，浏览内容安全可靠
 - 异步请求日志可视化（含 Mock 请求）
 
-预览地址：[去看看](http://ojbk.xin/vue-words/)
+预览地址：[去看看](https://ojbk.xin/vue-words/)
 
 ## 简单的 Vue 表格组件：table-man
 
@@ -122,7 +122,7 @@ sidebar: auto
 - 固定表头
 - ...
 
-预览地址：[去看看](http://ojbk.xin/table-man/)
+预览地址：[去看看](https://ojbk.xin/table-man/)
 
 源码地址：[Github](https://github.com/Aysnine/table-man.git)
 
