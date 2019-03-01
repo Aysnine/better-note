@@ -14,7 +14,7 @@ mv .deploy_git/.git/ docs/.vuepress/dist
 cd docs/.vuepress/dist
 
 # if you are deploying to a custom domain
-# echo ${GH_CUSTOM_DOMAIN} > CNAME
+echo ${GH_CUSTOM_DOMAIN} > CNAME
 
 # add commit timestamp
 git add .
