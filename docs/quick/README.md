@@ -8,6 +8,25 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## node: stdout is not a tty
+
+偶然在 windows 下使用 git-bash，也就是 minitty 终端，执行:
+
+``` bash
+node -v | echo
+# 或 echo `node -v`
+```
+
+输出 `stdout is not a tty`，猜测是终端在 windows 上水土不服，但是可以通过包一层 sh 去解决这个问题：
+
+``` bash
+sh -c 'node -v' | echo
+```
+
+相关资料：
+- [sh 包裹方式](https://stackoverflow.com/questions/45112889/bash-node-js-stdin-stdout-redirection-error-not-a-tty)
+- [设置为 cmd 输出](https://stackoverflow.com/questions/45890339/stdout-is-not-a-tty-using-bash-for-node-tape-tap-spec)
+
 ## ffmpeg 下载 m3u8 视频
 
 ``` bash
