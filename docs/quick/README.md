@@ -8,6 +8,21 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## ffmpeg 下载 m3u8 视频
+
+``` bash
+ffmpeg -i [地址] -c copy [文件名].mkv
+```
+
+- 地址即 m3u8 文件地址，如 `http://xxx.com/path/to/index.m3u8`
+- 使用 mkv 格式存储最好，此格式相当于图片中的 png，万金油
+
+使用 nohup 实现后台下载：
+
+``` bash
+nohup ffmpeg -i [地址] -c copy [文件名].mkv &
+```
+
 ## knex 连接 oracle 的问题
 
 [knex](https://knexjs.org) 可以用于 nodejs 后端开发，连接各种主流数据库，并进行增删改查操作，链式语法。
@@ -441,7 +456,7 @@ docker run \
 
 ## CentOS 7 安装最新版 FFmpeg
 
-以 x86_64 release 版本为例：
+以 x86_64 release 版本为例，**请注意文件名版本**：
 
 ```bash
 mkdir ffmpeg-install
