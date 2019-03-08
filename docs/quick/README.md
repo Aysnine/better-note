@@ -8,6 +8,14 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## yarn 更新项目依赖
+
+自动列出可更新的依赖，勾选项进行升级：
+
+``` bash
+yarn upgrade-interactive
+```
+
 ## node: stdout is not a tty
 
 偶然在 windows 下使用 git-bash，也就是 minitty 终端，执行:
