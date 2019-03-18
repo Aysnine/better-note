@@ -8,6 +8,10 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## antd：使用 dayjs 替换 moment
+
+dayjs 是 moment 的轻量化方案，给前端打包瘦身：[参考](https://github.com/iamkun/dayjs/issues/529#issue-419198101)
+
 ## yarn 更新项目依赖
 
 自动列出可更新的依赖，勾选项进行升级：
