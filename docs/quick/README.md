@@ -50,6 +50,41 @@ plugins=(
 )
 ```
 
+**PS：自己常用的 plugins 设置**
+
+mac:
+
+```
+plugins=(
+	git
+	docker
+	brew
+	osx
+	node
+	npm
+	yarn
+	zsh-syntax-highlighting
+	zsh-completions
+	zsh-autosuggestions
+)
+```
+
+centos:
+
+```
+plugins=(
+	git
+	docker
+	yum
+	node
+	npm
+	yarn
+	zsh-syntax-highlighting
+	zsh-completions
+	zsh-autosuggestions
+)
+```
+
 ## antd：使用 dayjs 替换 moment
 
 dayjs 是 moment 的轻量化方案，给前端打包瘦身：[参考](https://github.com/iamkun/dayjs/issues/529#issue-419198101)
