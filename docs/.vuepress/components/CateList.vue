@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import dayjs from 'dayjs'
+
 export default {
   name: 'CateList',
   props: {
@@ -40,7 +42,7 @@ export default {
       return this.$site.pages.filter((i) => {
         let { path } = i
         return this.filter(i) && path != this.$page.path && path.indexOf(this.$page.path)==0
-      }).sort((a,b) => a.lastUpdated < b.lastUpdated)
+      }).sort((b, a) => dayjs(a.lastUpdated) - dayjs(b.lastUpdated))
     },
     previewList() {
       return this.list.slice(0, this.preview)
