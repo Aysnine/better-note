@@ -30,6 +30,14 @@ dayjs 是 moment 的轻量化方案，给前端打包瘦身：[参考](https://g
 yarn upgrade-interactive
 ```
 
+但是会出现只更新 `yarn.lock` 文件，而不更新 `package.json` 的问题，如果有必要，可使用：
+
+``` bash
+yarn upgrade-interactive --latest
+```
+
+相关资料：[issues/4390](https://github.com/yarnpkg/yarn/issues/4390)
+
 ## node: stdout is not a tty
 
 偶然在 windows 下使用 git-bash，也就是 minitty 终端，执行:
