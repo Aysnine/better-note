@@ -8,6 +8,16 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## mac 之 Terminal 启动 vscode
+
+添加以下配置到 `~/.zshrc` or `~/.bashrc` ：
+
+``` bash
+alias vsc='/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron'
+```
+
+食用：`vsc ./path/to/folder/`
+
 ## mac 食用 oh-my-zsh
 
 安装 `zsh`：
