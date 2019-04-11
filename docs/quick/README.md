@@ -8,6 +8,18 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## mac 之 Terminal 查看端口占用
+
+``` bash
+netstat -nat | grep LISTEN
+```
+
+添加到 `~/.zshrc` 或 `~/.bashrc`：
+
+``` bash
+alias pt='netstat -nat | grep LISTEN'
+```
+
 ## mac 之 Terminal 启动 vscode
 
 添加以下配置到 `~/.zshrc` or `~/.bashrc` ：
