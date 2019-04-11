@@ -14,10 +14,12 @@ sidebar: auto
 netstat -nat | grep LISTEN
 ```
 
-添加到 `~/.zshrc` 或 `~/.bashrc`：
+使用 `alias`：
 
 ``` bash
-alias pt='netstat -nat | grep LISTEN'
+alias pt='netstat -nat | grep LISTEN'	# list ports
+alias pt4='pt | grep tcp4'		# list tcp4
+alias pt6='pt | grep tcp6'		# list tcp6
 ```
 
 ## mac 之 Terminal 启动 vscode
