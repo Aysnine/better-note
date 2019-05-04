@@ -1,6 +1,6 @@
 # 如何获取 vue 单文件自身源码路径
 
-关于为什么要获取每个 `.vue` 单文件自身源码路径的问题，还要从一个想法说起。
+这个问题要从一个想法说起。
 
 [D2Admin](https://github.com/d2-projects/d2-admin) 是一个开源的，前端中后台集成方案，原先是基于 vue-cli2，大概是向 vue-cli3 过渡时，
 作者老李，想在页面右下角加个 Toggle 点击，跳到当前页面源码对应的 github 页面。
@@ -9,9 +9,7 @@
 
 这些页面统一为 `.vue` 组件，那么转换一下：如何获取 vue 单文件自身源码路径？
 
-最终目标是把自身路径赋值到 `this.$options.__source` 上。
-
-目前方案 3 是最新的。
+目前经历了三个方案，最终目标是把自身路径赋值到 `this.$options.__source` 上。目前方案 3 是最新的。
 
 ## 方案 1 ：node + __filename
 
@@ -53,7 +51,7 @@ module.exports = {
 - 要在每个组件里手动赋值，还不能用 mixin
 - `__filename` 得到的路径在部分 `.vue` 文件下并不准确，路径可能还会带附带 querystring
 
-*PS: 一开始，坚强的老李用这个方式，给上百个组件手动挂上了路径，但总比手动写死每个路径要好*
+*一开始，坚强的老李用这个方式，给上百个组件手动挂上了路径，但总比手动写死每个路径要好*
 
 ## 方案 2 ：vue-loader + exposeFilename
 
@@ -88,7 +86,7 @@ module.exports = {
 
   - **为了安全**，`vue-loader` 在生产环境将 `__file` 赋值为文件名，非路径名，[详见文档](https://vue-loader.vuejs.org/options.html#exposefilename)
 
-*PS: 后来发现这个方法，老李得知后，还没看清缺点，就已经把代码改了，删了方案 1 中的所有附加代码，结果导致生产环境翻车orz*
+*后来才发现这个方法，老李得知后，还没看清缺点，就已经把代码改了，删了方案 1 中的所有附加代码，结果导致生产环境翻车orz*
 
 ## 方案 3 ：loader + Custom Block
 
