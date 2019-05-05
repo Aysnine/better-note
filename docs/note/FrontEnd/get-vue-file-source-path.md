@@ -47,7 +47,8 @@ module.exports = {
 };
 ```
 
-缺点：
+### 缺点
+
 - 要在每个组件里手动赋值，还不能用 mixin
 - `__filename` 得到的路径在部分 `.vue` 文件下并不准确，路径可能还会带附带 querystring
 
@@ -84,9 +85,9 @@ module.exports = {
 
 ### 缺点
 
-  - **为了安全**，`vue-loader` 在生产环境将 `__file` 赋值为文件名，非路径名，[详见文档](https://vue-loader.vuejs.org/options.html#exposefilename)
+- **为了安全**，`vue-loader` 在生产环境将 `__file` 赋值为文件名，非路径名，[详见文档](https://vue-loader.vuejs.org/options.html#exposefilename)
 
-*后来才发现这个方法，老李得知后，还没看清缺点，就已经把代码改了，删了方案 1 中的所有附加代码，结果导致生产环境翻车orz*
+*后来得知这个方法，老李就第一时间改代码，删了方案 1 中的所有附加代码，结果发现生产环境结果不一致，翻车了orz*
 
 ## 方案 3 ：loader + Custom Block
 
@@ -205,7 +206,7 @@ module.exports = function(source, map) {
 
 可进入预览页面查看效果，在右下角有 Toggle
 
-https://github.com/d2-projects/d2-admin
+https://github.com/d2-projects/d2-admin （可能还在翻车中）
 
 https://github.com/d2-projects/d2-advance
 
