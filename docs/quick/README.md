@@ -8,6 +8,20 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## mac 上使用 npm 出现 gyp 报错
+
+```
+gyp WARN EACCES user "root" does not have permission to access the dev dir "/root/.node-gyp/10.15.0"
+```
+
+与 npm 的安全机制有关，在 `.npmrc` 中添加 `unsafe-perm=true` 可以规避。
+
+相关：
+
+[Node10.15.0使用Root用户安装Node Install](https://zhuanlan.zhihu.com/p/54302170)
+
+[npm: 使用root 用户执行npm lifecycle 命令时报错](https://github.com/SamHwang1990/blog/issues/5)
+
 ## mac 之 Terminal 查看端口占用
 
 ``` bash
