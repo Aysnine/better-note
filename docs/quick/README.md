@@ -8,6 +8,45 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## 依赖前置排序算法（JavaScript ES6）
+
+``` js
+
+const preorderByDepends = (collcetion, getKey, getDeps) =>
+  collcetion
+    .reduce((queue, item) => {
+      const key = getKey(item)
+      const deps = getDeps(item)
+      const pos = deps.length ? Math.max(...deps.map(key => queue.indexOf(key))) + 1 : 0
+      return [...queue.slice(0, pos), key, ...queue.slice(pos)]
+    }, [])
+    .map(key => collcetion.find(item => getKey(item) === key))
+
+// Usage
+preorderByDepends([
+  { key: 'a', deps: ['b', 'd', 'e'] },
+  { key: 'e', deps: ['c'] },
+  { key: 'd', deps: ['c', 'e'] },
+], item => item.key, item => item.deps)
+
+/* output:
+
+  [
+    { key: "e", deps: ["c"] },
+    { key: "d", deps: ["c", "e"] },
+    { key: "a", deps: ["b", "d", "e"] },
+  ]
+*/
+```
+
+相关资料：
+
+[根据依赖进行数据排序的示例](https://www.iteye.com/topic/1128651)
+
+[(python实现)mysql5.6导出互相依赖的视图](https://blog.csdn.net/gxuehe/article/details/79016480)
+
+[用python解决mysql视图导入导出依赖问题](https://segmentfault.com/a/1190000012434905)
+
 ## mac 上使用 npm 出现 gyp 报错
 
 ```
