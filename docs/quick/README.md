@@ -8,6 +8,37 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## Java 8 生成指定范围内不重复的随机数组
+
+``` java
+package com.cnine.java;
+
+import java.util.Arrays;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
+
+public class GenerateRandomNumbers {
+    public static void main(String[] args) {
+
+	// 0 到 9 中随机生成 4 个不重复的数
+        int[] ints = ThreadLocalRandom
+                .current()
+                .ints(0, 9)
+                .distinct()
+                .limit(4)
+                .toArray();
+
+	// int 拼接成字符串
+        String numbers = Arrays.stream(ints)
+                .mapToObj(String::valueOf)
+                .collect(Collectors.joining(""));
+
+        System.out.println(numbers); // 如 '9527'
+    }
+}
+
+```
+
 ## parcel 配置正向代理
 
 parcel 不同于 webpack 那样功能齐全，比如没有类似 webpack 的 devServer 做请求代理（主要用于开发阶段消除跨域烦恼）。
