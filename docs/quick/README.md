@@ -8,6 +8,37 @@ sidebar: auto
 将零散的代码、知识放置于此，便于在日常使用中查找
 :::
 
+## parcel 配置正向代理
+
+parcel 不同于 webpack 那样功能齐全，比如没有类似 webpack 的 devServer 做请求代理（主要用于开发阶段消除跨域烦恼）。
+但是 parcel 提供了 api，以便与自定义 devServer，[文档](https://en.parceljs.org/api.html#middleware)。
+通过 parcel 的 `new Bundler` 得到的路由可以挂载到 express 上，结合 http-proxy-middleware 就能捆绑代理功能。
+
+``` js
+// scripts/server.js
+const proxy = require('http-proxy-middleware')
+const Bundler = require('parcel-bundler')
+const express = require('express')
+
+let bundler = new Bundler('src/index.html')
+let app = express()
+
+app.use(
+  '/api',
+  proxy({
+    target: 'http://localhost:3000'
+  })
+)
+
+app.use(bundler.middleware())
+
+app.listen(Number(process.env.PORT || 1234))
+```
+
+https://github.com/parcel-bundler/parcel/issues/55#issuecomment-357327211
+
+将 `parcel index.html` 命令换成 `node scripts/server.js` 就能启动自定义的 parcel server。
+
 ## 依赖前置排序算法（JavaScript ES6）
 
 ``` js
