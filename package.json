@@ -28,7 +28,7 @@
     "ls": "^0.2.1",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
-    "vuepress": "^1.1.0"
+    "vuepress": "^1.2.0"
   },
   "dependencies": {
     "dayjs": "^1.8.17"
