@@ -31,6 +31,6 @@
     "vuepress": "^1.1.0"
   },
   "dependencies": {
-    "dayjs": "^1.8.16"
+    "dayjs": "^1.8.17"
   }
 }
