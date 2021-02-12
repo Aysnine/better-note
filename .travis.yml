@@ -18,7 +18,7 @@ env:
     global:
         # Github Pages
         - GH_REF: github.com/Aysnine/aysnine.github.io.git
-        - GH_CUSTOM_DOMAIN: cnine.me
+        - GH_CUSTOM_DOMAIN: old.cnine.me
 
 branches:
   only:
